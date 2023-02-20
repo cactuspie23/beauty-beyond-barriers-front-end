@@ -1,9 +1,13 @@
+.page_container{
+  width: 100%;
+}
+
 .container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .label,
@@ -14,3 +18,4 @@
 .inputContainer {
   margin-bottom: 1rem;
 }
+

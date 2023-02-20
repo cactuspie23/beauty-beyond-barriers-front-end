@@ -14,14 +14,14 @@ const Signin = props => {
     <main className={styles.container}>
       <div className={styles.card_container}>
         <div className={styles.btns_container}>
-          <button onClick={() => toggleSelect(true)}>SIGN IN</button>
+          <button onClick={() => toggleSelect(true)} autoFocus style={{"outline":"none"}}>SIGN IN</button>
           <button onClick={() => toggleSelect(false)}>CREATE ACCOUNT</button>
         </div>
         <div className={styles.form_container}>
           {selectSignin ?
-            <LoginForm />
+            <LoginForm handleSignupOrLogin={props.handleSignupOrLogin} />
             :
-            <SignupForm />
+            <SignupForm handleSignupOrLogin={props.handleSignupOrLogin} />
           }
         </div>
       </div>

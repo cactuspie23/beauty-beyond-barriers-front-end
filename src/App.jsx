@@ -1,6 +1,6 @@
 // npm modules
 import { useState } from 'react'
-import { Routes, Route, useNavigate, Navigate } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 
 // page components
 // import Signup from './pages/Signup/Signup'
@@ -42,6 +42,10 @@ const App = () => {
         {/* <Route
           path="/signup"
           element={<Signup handleSignupOrLogin={handleSignupOrLogin} />}
+        />
+        <Route
+          path="/login"
+          element={<Login handleSignupOrLogin={handleSignupOrLogin} />}
         /> */}
         <Route
           path="/signin"

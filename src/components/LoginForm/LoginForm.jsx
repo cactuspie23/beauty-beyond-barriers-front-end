@@ -33,8 +33,8 @@ const LoginForm = props => {
   }
 
   return (
-    <>
-      <h1>Log In</h1>
+    <div className={styles.page_container}>
+      {/* <h1>Log In</h1> */}
       <p>{message}</p>
       <form
         autoComplete="off"
@@ -42,7 +42,8 @@ const LoginForm = props => {
         className={styles.container}
       >
         <div className={styles.inputContainer}>
-          <label htmlFor="email" className={styles.label}>Email</label>
+          <label htmlFor="email" className={styles.label}></label>
+          {/* <label htmlFor="email" className={styles.label}>Email</label> */}
           <input
             type="text"
             autoComplete="off"
@@ -50,10 +51,12 @@ const LoginForm = props => {
             value={formData.email}
             name="email"
             onChange={handleChange}
+            placeholder='EMAIL ADDRESS'
           />
         </div>
         <div className={styles.inputContainer}>
-          <label htmlFor="password" className={styles.label}>Password</label>
+          {/* <label htmlFor="password" className={styles.label}>Password</label> */}
+          <label htmlFor="password" className={styles.label}></label>
           <input
             type="password"
             autoComplete="off"
@@ -61,16 +64,17 @@ const LoginForm = props => {
             value={formData.pw}
             name="pw"
             onChange={handleChange}
+            placeholder="PASSWORD"
           />
         </div>
         <div>
-          <button className={styles.button}>Log In</button>
-          <Link to="/">
+          <button className={styles.button}>Sign In</button>
+          {/* <Link to="/">
             <button>Cancel</button>
-          </Link>
+          </Link> */}
         </div>
       </form>
-    </>
+    </div>
   )
 }
 
