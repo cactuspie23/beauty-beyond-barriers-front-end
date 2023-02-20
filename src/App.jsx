@@ -3,11 +3,12 @@ import { useState } from 'react'
 import { Routes, Route, useNavigate, Navigate } from 'react-router-dom'
 
 // page components
-import Signup from './pages/Signup/Signup'
-import Login from './pages/Login/Login'
+// import Signup from './pages/Signup/Signup'
+// import Login from './pages/Login/Login'
 import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
+import Signin from './pages/Signin/Signin'
 
 // components
 import NavBar from './components/NavBar/NavBar'
@@ -38,13 +39,13 @@ const App = () => {
       <NavBar user={user} handleLogout={handleLogout} />
       <Routes>
         <Route path="/" element={<Landing user={user} />} />
-        <Route
+        {/* <Route
           path="/signup"
           element={<Signup handleSignupOrLogin={handleSignupOrLogin} />}
-        />
+        /> */}
         <Route
-          path="/login"
-          element={<Login handleSignupOrLogin={handleSignupOrLogin} />}
+          path="/signin"
+          element={<Signin handleSignupOrLogin={handleSignupOrLogin} />}
         />
         <Route
           path="/profiles"

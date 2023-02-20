@@ -8,10 +8,16 @@ const LoginForm = props => {
     email: '',
     pw: '',
   })
+
   const navigate = useNavigate()
+  const [message, setMessage] = useState([''])
+
+  const updateMessage = msg => {
+    setMessage(msg)
+  }
 
   const handleChange = e => {
-    props.updateMessage('')
+    updateMessage('')
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
@@ -22,45 +28,49 @@ const LoginForm = props => {
       props.handleSignupOrLogin()
       navigate('/')
     } catch (err) {
-      props.updateMessage(err.message)
+      updateMessage(err.message)
     }
   }
 
   return (
-    <form
-      autoComplete="off"
-      onSubmit={handleSubmit}
-      className={styles.container}
-    >
-      <div className={styles.inputContainer}>
-        <label htmlFor="email" className={styles.label}>Email</label>
-        <input
-          type="text"
-          autoComplete="off"
-          id="email"
-          value={formData.email}
-          name="email"
-          onChange={handleChange}
-        />
-      </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="password" className={styles.label}>Password</label>
-        <input
-          type="password"
-          autoComplete="off"
-          id="password"
-          value={formData.pw}
-          name="pw"
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <button className={styles.button}>Log In</button>
-        <Link to="/">
-          <button>Cancel</button>
-        </Link>
-      </div>
-    </form>
+    <>
+      <h1>Log In</h1>
+      <p>{message}</p>
+      <form
+        autoComplete="off"
+        onSubmit={handleSubmit}
+        className={styles.container}
+      >
+        <div className={styles.inputContainer}>
+          <label htmlFor="email" className={styles.label}>Email</label>
+          <input
+            type="text"
+            autoComplete="off"
+            id="email"
+            value={formData.email}
+            name="email"
+            onChange={handleChange}
+          />
+        </div>
+        <div className={styles.inputContainer}>
+          <label htmlFor="password" className={styles.label}>Password</label>
+          <input
+            type="password"
+            autoComplete="off"
+            id="password"
+            value={formData.pw}
+            name="pw"
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <button className={styles.button}>Log In</button>
+          <Link to="/">
+            <button>Cancel</button>
+          </Link>
+        </div>
+      </form>
+    </>
   )
 }
 
