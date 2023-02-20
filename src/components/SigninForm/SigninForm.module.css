@@ -3,14 +3,22 @@
   text-align: center;
 }
 
+.page_container p{
+  height: 40px;
+  margin: 0;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+
 .container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
   /* margin-bottom: 50px; */
+  width: 100%;
 }
+
 
 .inputContainer {
   margin-bottom: 1rem;
@@ -37,4 +45,3 @@
   font-weight: bold;
   letter-spacing: .2em;
 }
-
