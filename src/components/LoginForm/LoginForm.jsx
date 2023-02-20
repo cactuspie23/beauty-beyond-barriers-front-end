@@ -67,12 +67,12 @@ const LoginForm = props => {
             placeholder="PASSWORD"
           />
         </div>
-        <div>
-          <button className={styles.button}>Sign In</button>
-          {/* <Link to="/">
+        {/* <div> */}
+        <button className={styles.button}>SIGN IN</button>
+        {/* <Link to="/">
             <button>Cancel</button>
           </Link> */}
-        </div>
+        {/* </div> */}
       </form>
     </div>
   )

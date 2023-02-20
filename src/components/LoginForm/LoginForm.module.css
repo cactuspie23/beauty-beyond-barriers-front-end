@@ -1,5 +1,6 @@
 .page_container{
   width: 100%;
+  text-align: center;
 }
 
 .container {
@@ -28,4 +29,12 @@
 .inputContainer > input {
   height: 50px;
   padding-left: 10px;
+}
+
+.button{
+  width: 80%;
+  background-color: #040a2b;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .2em;
 }
