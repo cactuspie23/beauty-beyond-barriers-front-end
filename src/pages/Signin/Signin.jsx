@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import LoginForm from '../../components/LoginForm/LoginForm'
+import SigninForm from '../../components/SigninForm/SigninForm'
 import SignupForm from '../../components/SignupForm/SignupForm'
 import styles from './Signin.module.css'
 
@@ -19,7 +19,7 @@ const Signin = props => {
         </div>
         <div className={styles.form_container}>
           {selectSignin ?
-            <LoginForm handleSignupOrLogin={props.handleSignupOrLogin} />
+            <SigninForm handleSignupOrLogin={props.handleSignupOrLogin} />
             :
             <SignupForm handleSignupOrLogin={props.handleSignupOrLogin} />
           }

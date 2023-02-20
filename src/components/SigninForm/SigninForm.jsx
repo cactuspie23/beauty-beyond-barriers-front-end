@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import styles from './LoginForm.module.css'
+import styles from './SigninForm.module.css'
 import * as authService from '../../services/authService'
 
-const LoginForm = props => {
+const SigninForm = props => {
   const [formData, setFormData] = useState({
     email: '',
     pw: '',
@@ -78,4 +78,4 @@ const LoginForm = props => {
   )
 }
 
-export default LoginForm
+export default SigninForm
