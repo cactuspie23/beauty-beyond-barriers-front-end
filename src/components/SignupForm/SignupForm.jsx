@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import styles from './SignupForm.module.css'
 import * as authService from '../../services/authService'
 
@@ -121,14 +121,14 @@ const SignupForm = props => {
             onChange={handleChangePhoto}
           />
         </div> */}
-        <div className={styles.inputContainer}>
-          <button disabled={isFormInvalid()} className={styles.button}>
-            CREATE ACCOUNT
-          </button>
-          {/* <Link to="/">
+        {/* <div className={styles.inputContainer}> */}
+        <button disabled={isFormInvalid()} className={styles.button}>
+          CREATE ACCOUNT
+        </button>
+        {/* <Link to="/">
             <button>Cancel</button>
           </Link> */}
-        </div>
+        {/* </div> */}
       </form>
     </div>
   )
