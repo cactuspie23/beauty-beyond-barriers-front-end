@@ -9,6 +9,7 @@ import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Signin from './pages/Signin/Signin'
+import BBB from './pages/BBB/BBB'
 
 // components
 import NavBar from './components/NavBar/NavBar'
@@ -64,6 +65,14 @@ const App = () => {
           element={
             <ProtectedRoute user={user}>
               <ChangePassword handleSignupOrLogin={handleSignupOrLogin} />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/bbb"
+          element={
+            <ProtectedRoute user={user}>
+              <BBB />
             </ProtectedRoute>
           }
         />
