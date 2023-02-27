@@ -5,6 +5,29 @@
 
 .section{
   margin: 10% 0;
+  text-align: center;
+}
+
+.option{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5em;
+  gap: 2em;
+}
+
+.section > div:first-child{
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #B1B1B1;
 }
 
 .icon {

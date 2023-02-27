@@ -5,7 +5,7 @@ import Product from '../../components/Product/Product'
 const BBB = ({ user }) => {
   return (
     <main className={styles.container}>
-      <div id={styles.first_section} className={styles.section}>
+      <div id={styles.first_section} >
         <div id={styles.title_section}>
           <img src="../images/people.png" alt="people" id={styles.people_img} />
           <div id={styles.info_section}>
@@ -49,6 +49,12 @@ const BBB = ({ user }) => {
       </div>
       <div id={styles.second_section} className={styles.section}>
         <div>Category Name</div>
+        <div className={styles.filter}>
+          <div>FILTER BY</div>
+          <div>COLLECTION</div>
+          <div>FINISH</div>
+          <div>COLOR FAMILY</div>
+        </div>
         <div className={styles.products}>
           <Product />
           <Product />
@@ -60,6 +66,31 @@ const BBB = ({ user }) => {
       </div>
       <div id={styles.third_section} className={styles.section}>
         <div>Category Name</div>
+        <div className={styles.filter}>
+          <div>FILTER BY</div>
+          <div className={styles.option}>
+            <div>
+              CATEGORY
+            </div>
+            <img src="../../images/sort-down.png" alt="short-down-icon" />
+          </div>
+          <div className={styles.option}>
+            <div>COLLECTION</div>
+            <img src="../../images/sort-down.png" alt="short-down-icon" />
+          </div>
+          <div className={styles.option}>
+            <div>
+              SKIN TYPE
+            </div>
+            <img src="../../images/sort-down.png" alt="short-down-icon" />
+          </div>
+          <div className={styles.option}>
+            <div>
+              SKIN CONCERNS
+            </div>
+            <img src="../../images/sort-down.png" alt="short-down-icon" />
+          </div>
+        </div>
         <div className={styles.products}>
           <Product />
           <Product />
