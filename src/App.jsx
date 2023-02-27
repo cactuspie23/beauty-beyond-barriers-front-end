@@ -10,6 +10,7 @@ import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Signin from './pages/Signin/Signin'
 import BBB from './pages/BBB/BBB'
+import Mission from './pages/Mission/Mission'
 
 // components
 import NavBar from './components/NavBar/NavBar'
@@ -75,6 +76,10 @@ const App = () => {
               <BBB />
             </ProtectedRoute>
           }
+        />
+        <Route
+          path="/mission"
+          element={<Mission />}
         />
       </Routes>
     </>
