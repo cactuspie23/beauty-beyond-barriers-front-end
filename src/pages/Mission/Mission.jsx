@@ -35,9 +35,9 @@ const Mission = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className={styles.example}>
         <h2>WHEN A PRODUCT DESIGN WORKS FOR ONE PERSON, IT BECOMES EASIER FOR EVERYONE.</h2>
-        <div>
+        <div className={styles.makeup}>
           <div>
             <p>Double-sided applicator</p>
             <p>Square, matte handle is easy to grip</p>
@@ -48,6 +48,14 @@ const Mission = () => {
           <div>
             <p>Square container won't roll off the table</p>
           </div>
+        </div>
+      </div>
+      <div className={styles.bottom}>
+        <div>
+          <img src='/images/Mission/Rectangle 4400.png' alt='makeup' />
+        </div>
+        <div>
+          <p>The seek to create the kind of beauty that is accessible to everybody and centered on the requirements of the user. We question the norms of conventional beauty in order to produce something that is accessible to everyone by focusing on the needs of the end user.</p>
         </div>
       </div>
     </main>
