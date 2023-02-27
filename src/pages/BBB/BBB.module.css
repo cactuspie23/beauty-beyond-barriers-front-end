@@ -13,7 +13,7 @@
   align-items: center;
   /* padding: 25px 40px; */
   gap: 10px;
-  margin: 1em;
+  margin: 15%;
 
   /* position: absolute;
   width: 509px;
@@ -129,7 +129,7 @@
   flex-grow: 0; */
 }
 
-#content {
+#title_section {
   display: flex;
   justify-content: space-between;
   align-items: center;

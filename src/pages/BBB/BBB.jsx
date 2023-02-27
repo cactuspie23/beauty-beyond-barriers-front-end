@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const BBB = ({ user }) => {
   return (
     <main className={styles.container}>
-      <div id={styles.content}>
+      <div id={styles.title_section}>
         <img src="../images/people.png" alt="people" id={styles.people_img} />
         <div id={styles.info_section}>
           <div id={styles.title}>
@@ -38,6 +38,11 @@ const BBB = ({ user }) => {
             <button id={styles.tutorials_btn}>WATCH TUTORIALS</button>
           </Link>
         </div>
+      </div>
+      <div>
+        <p>
+          Estee Lauder is committed to fostering an environment in which individuals with disabilities have equal access to the beauty industry. The Beauty Beyond Barriers (BBB) collection is comprised of hand-picked items that are aimed at lowering entry barriers to the world of cosmetics and making them more disability-friendly.
+        </p>
       </div>
     </main>
   )
