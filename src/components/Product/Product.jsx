@@ -3,7 +3,7 @@ import styles from './Product.module.css'
 const Product = ({ user }) => {
   return (
     <main className={styles.container}>
-      <img src='' alt='product' />
+      <img src='../../images/lipstick.png' alt='product' />
       <div>Product Name</div>
       <div>Description</div>
       <div>

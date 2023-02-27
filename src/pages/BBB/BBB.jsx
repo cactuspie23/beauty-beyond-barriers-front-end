@@ -5,7 +5,7 @@ import Product from '../../components/Product/Product'
 const BBB = ({ user }) => {
   return (
     <main className={styles.container}>
-      <div id={styles.first_section}>
+      <div id={styles.first_section} className={styles.section}>
         <div id={styles.title_section}>
           <img src="../images/people.png" alt="people" id={styles.people_img} />
           <div id={styles.info_section}>
@@ -47,19 +47,27 @@ const BBB = ({ user }) => {
           </p>
         </div>
       </div>
-      <div id={styles.second_section}>
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+      <div id={styles.second_section} className={styles.section}>
+        <div>Category Name</div>
+        <div className={styles.products}>
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+        </div>
       </div>
-      <div id={styles.third_section}>
-
+      <div id={styles.third_section} className={styles.section}>
+        <div>Category Name</div>
+        <div className={styles.products}>
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+        </div>
       </div>
     </main>
   )
