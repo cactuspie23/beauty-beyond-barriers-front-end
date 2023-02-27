@@ -90,6 +90,12 @@ const BBB = ({ user }) => {
             </div>
             <img src="../../images/sort-down.png" alt="short-down-icon" />
           </div>
+          <div className={styles.option} id={styles.sort_by}>
+            <div>
+              SORT BY
+            </div>
+            <img src="../../images/sort-down.png" alt="short-down-icon" />
+          </div>
         </div>
         <div className={styles.products}>
           <Product />

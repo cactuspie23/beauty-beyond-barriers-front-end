@@ -55,6 +55,11 @@
   gap: 10%;
 }
 
+#sort_by{
+  position: absolute;
+  right: 5vw;
+}
+
 #title {
   font-family: 'Work Sans', sans-serif;
   display: flex;
