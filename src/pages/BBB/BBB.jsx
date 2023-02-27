@@ -7,9 +7,11 @@ const BBB = ({ user }) => {
       <div id={styles.content}>
         <img src="../images/people.png" alt="people" id={styles.people_img} />
         <div id={styles.info_section}>
-          <h3>ONLINE EXCLUSIVE</h3>
-          <h1>BEAUTY BEYOND BARRIERS</h1>
-          <h2>A collection of our most accessible products.</h2>
+          <div id={styles.title}>
+            <div>ONLINE EXCLUSIVE</div>
+            <div>Beauty Beyond Barriers</div>
+            <div>A collection of our most accessible products.</div>
+          </div>
           <div id={styles.icons}>
             <div className={styles.icons_col}>
               <div className={styles.icon}>
@@ -17,17 +19,17 @@ const BBB = ({ user }) => {
                 <div>Accessible</div>
               </div>
               <div className={styles.icon}>
-                <img src="../images/universal-icon.png" alt='accessible-icons' />
+                <img src="../images/grip-friendly.png" alt='accessible-icons' />
                 <div>Accessible</div>
               </div>
             </div>
             <div className={styles.icons_col}>
               <div className={styles.icon}>
-                <img src="../images/universal-icon.png" alt='accessible-icons' />
+                <img src="../images/highly-pigmented.png" alt='accessible-icons' />
                 <div>Accessible</div>
               </div>
               <div className={styles.icon}>
-                <img src="../images/universal-icon.png" alt='accessible-icons' />
+                <img src="../images/easy-applicator.png" alt='accessible-icons' />
                 <div>Accessible</div>
               </div>
             </div>

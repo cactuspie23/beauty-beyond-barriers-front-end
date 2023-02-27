@@ -1,6 +1,6 @@
 .container {
-  min-width: 100vw;
-  padding: 0 7vw;
+  max-width: 100vw;
+  padding: 0 5vw;
 }
 
 .icon {
@@ -8,20 +8,21 @@
 
 
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
-  align-items: flex-start;
-  padding: 25px 40px;
+  align-items: center;
+  /* padding: 25px 40px; */
   gap: 10px;
+  margin: 1em;
 
-  position: absolute;
+  /* position: absolute;
   width: 509px;
   height: 190px;
   left: 990px;
-  top: 314px;
+  top: 314px; */
 
-  border: 1px solid #D8D8D8;
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+  /* border: 1px solid #D8D8D8;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25)); */
 
 }
 
@@ -33,62 +34,33 @@
 
 }
 
-.container h1 {
-  /* Beauty Beyond Barriers */
-
-
-  position: absolute;
-  width: 563px;
-  height: 68px;
-  left: 986px;
-  top: 145px;
-
-  font-family: 'Optima';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 68px;
-  /* identical to box height */
-
-
-  color: #000000;
+#title {
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-.container h3 {
-  position: absolute;
-  width: 134px;
-  height: 18px;
-  left: 990px;
-  top: 117px;
+#title * {
+  width: 100%;
+}
 
-  font-family: 'Roboto';
-  font-style: normal;
+#title div:first-child {
+  font-size: 0.8em;
   font-weight: 800;
-  font-size: 15px;
-  line-height: 18px;
-  /* identical to box height */
-
-
-  color: #000000;
-
 }
 
-.container h2 {
-  position: absolute;
-  width: 583px;
-  height: 30px;
-  left: 986px;
-  top: 238px;
+#title div:nth-child(2) {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0.5em 0;
+}
 
-  font-family: 'AkzidenzGrotesk';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0.005em;
-
-  color: #000000;
-
+#title div:nth-child(3) {
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 #tutorials_btn {
@@ -100,25 +72,32 @@
   padding: 0px;
   gap: 10px;
 
-  position: absolute;
+  /* position: absolute; */
   width: 265px;
   height: 49px;
-  left: 990px;
-  top: 549px;
+  /* left: 990px;
+  top: 549px; */
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #info_section {
-  width: 30vw;
+  width: 45vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  padding: 5%;
 }
 
 #tutorials_btn {
-  width: 100%;
+  width: 20em;
+  text-align: center;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
 }
 
 #icons {
@@ -126,43 +105,40 @@
   justify-content: space-around;
   align-items: center;
   border: 2px grey solid;
-  padding: 10%;
-  width: 100%;
+  /* padding: 5% 3%; */
+  width: 80%;
+  margin: 2em 0;
+  border: 1px solid #D8D8D8;
+  /* filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25)); */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 #people_img {
-  /* max-width: 50vw; */
+  max-width: 45vw;
 
   /* Rectangle 42 */
 
 
-  width: 915px;
-  height: 598px;
+  /* width: 915px;
+  height: 598px; */
 
   /* Inside auto layout */
 
-  flex: none;
+  /* flex: none;
   order: 0;
-  flex-grow: 0;
+  flex-grow: 0; */
 }
 
 #content {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
   gap: 81px;
 
   width: 1569px;
-  height: 772px;
-
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  height: 772px; */
 }
