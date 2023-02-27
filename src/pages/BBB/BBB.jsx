@@ -1,9 +1,9 @@
 import styles from './BBB.module.css'
+import { Link } from 'react-router-dom'
 
 const BBB = ({ user }) => {
   return (
     <main className={styles.container}>
-      <h1>BBB Page</h1>
       <div id={styles.content}>
         <img src="../images/people.png" alt="people" id={styles.people_img} />
         <div id={styles.info_section}>
@@ -32,7 +32,9 @@ const BBB = ({ user }) => {
               </div>
             </div>
           </div>
-          <img src='../images/tutorials-btn.png' alt="tutorial-button" id={styles.tutorials_btn} />
+          <Link>
+            <button id={styles.tutorials_btn}>WATCH TUTORIALS</button>
+          </Link>
         </div>
       </div>
     </main>
