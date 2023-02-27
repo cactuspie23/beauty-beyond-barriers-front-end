@@ -1,0 +1,43 @@
+.container{
+  margin: 2% 0;
+  text-align: left;
+}
+
+#title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+}
+
+#product_img{
+  width:20vw;
+  margin-bottom: 10%;
+}
+
+#accessibility_icon{
+  width: 15px;
+}
+
+#name{
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+#description, #review{
+  font-size: 1em;
+}
+
+#review{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+}
+
+#price{
+  font-size: 1em;
+  font-weight: 600;
+}
+
+
