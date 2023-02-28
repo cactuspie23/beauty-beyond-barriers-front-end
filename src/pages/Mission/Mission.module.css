@@ -95,14 +95,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto';
   margin: 2.8rem;
   padding: 1rem;
+}
+
+.example > h2 {
+  max-width: 55%;
+  text-align: center;
 }
 
 .makeup {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'AkzidenzGrotesk';
 }
 
 .bottom {
