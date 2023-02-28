@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  src: local('Optima'), url('./fonts/Optima.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AkzidenzGrotesk';
+  font-style: normal;
+  src: local('AkzidenzGrotesk'), url('./fonts/AkzidenzGrotesk.ttf') format('truetype');
+}
+
 * {
   box-sizing: border-box;
 }
