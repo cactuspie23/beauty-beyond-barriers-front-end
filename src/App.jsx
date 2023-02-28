@@ -72,9 +72,7 @@ const App = () => {
         <Route
           path="/bbb"
           element={
-            <ProtectedRoute user={user}>
-              <BBB />
-            </ProtectedRoute>
+            <BBB />
           }
         />
         <Route
