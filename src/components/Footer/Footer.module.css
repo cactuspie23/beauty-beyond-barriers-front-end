@@ -1,4 +1,87 @@
+span{
+  color:red;
+}
+
+.section
+,.sign_up{
+  width: 25%;
+  margin: 1%;
+}
+
+.large_sec{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.checkbox{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5% 0;
+  width: 100%;
+}
+
+.section div{
+  margin: 3% 0;
+  color:#a0aff9;
+}
+
+.section h1,
+.large_sec h1{
+  border-bottom: 1px rgba(128, 128, 128, .5) solid;
+  color: white;
+  padding-bottom: 2%;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.checkbox > div{
+  margin-top: 0;
+  color: white;
+}
+
+input[type="tel"], input[type="email"] {
+  background-color: #050b29;
+  color: white;
+  border: white 2px solid;
+  height: 3em;
+  width: 10em;
+}
+
+input[type="tel"]::placeholder, input[type="email"]::placeholder {
+  color: white;
+  padding: 0 2%;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
+.sign_up button{
+  background-color: #050b29;
+  color: #a4a8f5;
+  font-weight: bolder;
+  border: 1px solid #a4a8f5;
+  margin: 2% 3%;
+  height: 3em;
+  width: 5em;
+}
+
 #container{
   background-color: #050b29;
   color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
+
+#second_large_sec{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
