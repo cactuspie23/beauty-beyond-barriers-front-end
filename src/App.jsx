@@ -11,6 +11,7 @@ import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Signin from './pages/Signin/Signin'
 import BBB from './pages/BBB/BBB'
 import Mission from './pages/Mission/Mission'
+import ProductDetails from './pages/ProductDetails/ProductDetails'
 
 // components
 import NavBar from './components/NavBar/NavBar'
@@ -78,6 +79,12 @@ const App = () => {
         <Route
           path="/mission"
           element={<Mission />}
+        />
+        <Route
+          path="/products/:id"
+          element={
+            <ProductDetails />
+          }
         />
       </Routes>
     </>

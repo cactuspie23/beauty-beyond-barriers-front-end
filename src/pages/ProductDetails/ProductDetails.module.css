@@ -1,0 +1,21 @@
+.container img{
+  width:40vw;
+}
+
+.container h2{
+  font-weight: 400;
+}
+
+.dropdown_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#others{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin: 8% 0;
+}
