@@ -1,20 +1,39 @@
-img {
+.pics > img {
   max-width: 50%;
+  width: 100%;
   height: auto;
 }
 
 .dropdown {
   display: flex;
-  justify-content: center;
+  margin: 1rem;
 }
 
 .dleft {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
   width: 35%;
+  line-height: 140%;
+  font-family: 'AkzidenzGrotesk';
+}
+
+.head {
+  font-size: 15px;
 }
 
 .dright {
   display: flex;
-  width: 65%;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.desc {
+  display: flex;
+  flex-direction: row;
+}
+
+.desc > p {
+  padding: 0 5rem;
 }
