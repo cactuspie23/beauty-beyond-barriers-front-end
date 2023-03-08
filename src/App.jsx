@@ -12,7 +12,7 @@ import Signin from './pages/Signin/Signin'
 import BBB from './pages/BBB/BBB'
 import Mission from './pages/Mission/Mission'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
-
+import Kit from './pages/Kit/Kit'
 // components
 import NavBar from './components/NavBar/NavBar'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
@@ -84,6 +84,12 @@ const App = () => {
           path="/products/:id"
           element={
             <ProductDetails />
+          }
+        />
+        <Route
+          path="/kit"
+          element={
+            <Kit />
           }
         />
       </Routes>
