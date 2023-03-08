@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import styles from './NavBar.module.css'
+import DropdownMenu from '../DropdownMenu/DropdownMenu'
 
 const NavBar = ({ user, handleLogout }) => {
   return (
@@ -43,6 +44,7 @@ const NavBar = ({ user, handleLogout }) => {
           <li>OFFERS</li>
         </ul>
       </div>
+      <DropdownMenu />
     </nav>
   )
 }

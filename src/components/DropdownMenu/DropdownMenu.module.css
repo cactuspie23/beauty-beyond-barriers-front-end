@@ -1,0 +1,20 @@
+img {
+  max-width: 50%;
+  height: auto;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+.dleft {
+  width: 35%;
+}
+
+.dright {
+  display: flex;
+  width: 65%;
+  align-items: center;
+  justify-content: space-evenly;
+}
