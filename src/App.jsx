@@ -13,7 +13,7 @@ import BBB from './pages/BBB/BBB'
 import Mission from './pages/Mission/Mission'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Footer from './components/Footer/Footer'
-
+import Kit from './pages/Kit/Kit'
 // components
 import NavBar from './components/NavBar/NavBar'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
@@ -85,6 +85,12 @@ const App = () => {
           path="/products/:id"
           element={
             <ProductDetails />
+          }
+        />
+        <Route
+          path="/kit"
+          element={
+            <Kit />
           }
         />
       </Routes>
