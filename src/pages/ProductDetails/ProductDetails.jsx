@@ -19,48 +19,93 @@ const ProductDetails = ({ user }) => {
 
   return (
     <main className={styles.container}>
-      <div id={styles.product}>
-        <img src='../../images/lipstick.png' alt="lipstick" />
-        <div id={styles.product_info}>
-          <div className={styles.dropdown}>
-            <div className={styles.dropdown_title}>
-              <h2>Product Details</h2>
-              <div>+</div>
-            </div>
-            <div>
-              <b>Accessibility Features</b><br />
-              Grip friendly: Lorem ipsum dolor sit amet consectetur.<br />
-              Highly-pigmented: Lorem ipsum dolor sit amet consectetur.<br />
-              Easy Applicator: Lorem ipsum dolor sit amet consectetur.<br /><br />
+      <div id={styles.section1}>
+        <div id={styles.product_descr}>
+          <img src='../../images/lipstick2.png' alt="lipstick" />
+          <div id={styles.product_info}>
+            <div className={styles.dropdown}>
+              <div className={styles.dropdown_title}>
+                <h2>Product Details</h2>
+                <div>+</div>
+              </div>
+              <div>
+                <b>Accessibility Features</b><br />
+                Grip friendly: Lorem ipsum dolor sit amet consectetur.<br />
+                Highly-pigmented: Lorem ipsum dolor sit amet consectetur.<br />
+                Easy Applicator: Lorem ipsum dolor sit amet consectetur.<br /><br />
 
-              Learn more about our accessibility products here.<br />
+                Learn more about our accessibility products here.<br />
+              </div>
+              <br />
+              <div>
+                <b>Matte Finish</b><br />
+                Lorem ipsum dolor sit amet consectetur. Aliquam morbi nulla sed et aliquet. Congue elit fringilla diam pulvinar ut sed.
+              </div>
+              <br />
+              <div>
+                <b>Packaging Details</b><br />
+                Lorem ipsum dolor sit amet consectetur. Aliquam morbi nulla sed et aliquet. Congue elit fringilla diam pulvinar ut sed.
+              </div>
             </div>
-            <br />
-            <div>
-              <b>Matte Finish</b><br />
-              Lorem ipsum dolor sit amet consectetur. Aliquam morbi nulla sed et aliquet. Congue elit fringilla diam pulvinar ut sed.
+            <div className={styles.dropdown}>
+              <div className={styles.dropdown_title}>
+                <h2>How To Use</h2>
+                <div>+</div>
+              </div>
             </div>
-            <br />
-            <div>
-              <b>Packaging Details</b><br />
-              Lorem ipsum dolor sit amet consectetur. Aliquam morbi nulla sed et aliquet. Congue elit fringilla diam pulvinar ut sed.
-            </div>
-          </div>
-          <div className={styles.dropdown}>
-            <div className={styles.dropdown_title}>
-              <h2>How To Use</h2>
-              <div>+</div>
-            </div>
-          </div>
-          <div className={styles.dropdown}>
-            <div className={styles.dropdown_title}>
-              <h2>Ingredients</h2>
-              <div>+</div>
+            <div className={styles.dropdown}>
+              <div className={styles.dropdown_title}>
+                <h2>Ingredients</h2>
+                <div>+</div>
+              </div>
             </div>
           </div>
         </div>
+        <div id={styles.product_info}>
+          <h1>Product Name</h1>
+          <div>
+            Stars / Num of reviews
+            <div>Read Reviews</div>
+          </div>
+          <div>Description</div>
+          <div id={styles.icons}>
+            <div className={styles.icons_col}>
+              <div className={styles.icon}>
+                <img src="../images/universal-icon.png" alt='accessible-icons' />
+                <div>Accessible</div>
+              </div>
+              <div className={styles.icon}>
+                <img src="../images/grip-friendly.png" alt='accessible-icons' />
+                <div>Accessible</div>
+              </div>
+            </div>
+            <div className={styles.icons_col}>
+              <div className={styles.icon}>
+                <img src="../images/highly-pigmented.png" alt='accessible-icons' />
+                <div>Accessible</div>
+              </div>
+              <div className={styles.icon}>
+                <img src="../images/easy-applicator.png" alt='accessible-icons' />
+                <div>Accessible</div>
+              </div>
+            </div>
+          </div>
+          <div id={styles.colors}>
+            <ul>
+              <li>ALL</li>
+              <li>NUDE</li>
+              <li>PINK</li>
+              <li>CORAL</li>
+              <li>RED</li>
+              <li>MAUVE</li>
+            </ul>
+            <img src='../../images/color.png' alt="color" />
+          </div>
+          <select>
+            <option>333 PERSUASIVE</option>
+          </select>
+        </div>
       </div>
-      <div></div>
       <div id={styles.others}>
         <Product></Product>
         <Product></Product>

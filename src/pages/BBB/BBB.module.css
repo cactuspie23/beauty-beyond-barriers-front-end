@@ -36,7 +36,12 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 15%;
+  margin: 2%;
+  padding: 2% 5%;
+}
+
+.icon > div{
+  font-size: 0.8em;
 }
 
 .icons_col {
@@ -113,9 +118,9 @@
 }
 
 #tutorials_btn {
-  width: 20em;
+  width: 15em;
   text-align: center;
-  height: 4em;
+  height: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,8 +132,9 @@
   justify-content: space-around;
   align-items: center;
   border: 2px grey solid;
-  width: 80%;
-  margin: 2em 0;
+  width: 100%;
+  margin: 1em 0;
+  padding: 0.5em 1em;
   border: 1px solid #D8D8D8;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }

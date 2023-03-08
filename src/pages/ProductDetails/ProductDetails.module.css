@@ -1,5 +1,9 @@
-.container img{
-  width:40vw;
+.container{
+  padding: 5%;
+}
+
+.dropdown{
+  width: 100%;
 }
 
 .container h2{
@@ -12,10 +16,64 @@
   align-items: center;
 }
 
+.container ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  gap: 5%;
+}
+
+.icon {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15%;
+  padding: 5%;
+}
+
+.icons_col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+#product_descr
+,#product_descr img{
+  width: 50vw;
+}
+
+#colors img{
+  width: 28vw;
+}
+
+#product_info{
+  width: 28vw;
+  margin: 0 3%;
+}
+
+#section1{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 3%;
+}
+
 #others{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5%;
   margin: 8% 0;
+}
+
+#icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 2em 0;
 }
