@@ -13,8 +13,17 @@
 
 .text{
   width: 43vw;
-  padding: 0 2vw;
+  /* padding: 0 2vw; */
   /* margin-right: 2vw; */
+  margin: 0 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container h2{
+  margin: 0;
 }
 
 .text button{
