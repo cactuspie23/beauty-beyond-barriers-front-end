@@ -22,17 +22,17 @@ const BBB = ({ user }) => {
                 </div>
                 <div className={styles.icon}>
                   <img src="../images/grip-friendly.png" alt='accessible-icons' />
-                  <div>Accessible</div>
+                  <div>Grip Friendly</div>
                 </div>
               </div>
               <div className={styles.icons_col}>
                 <div className={styles.icon}>
                   <img src="../images/highly-pigmented.png" alt='accessible-icons' />
-                  <div>Accessible</div>
+                  <div>Highly-Pigmented</div>
                 </div>
                 <div className={styles.icon}>
                   <img src="../images/easy-applicator.png" alt='accessible-icons' />
-                  <div>Accessible</div>
+                  <div>Easy Applicator</div>
                 </div>
               </div>
             </div>

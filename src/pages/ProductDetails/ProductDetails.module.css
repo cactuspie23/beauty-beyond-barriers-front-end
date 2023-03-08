@@ -1,0 +1,145 @@
+.container{
+  padding: 5%;
+}
+
+.dropdown{
+  width: 100%;
+}
+
+.container h2{
+  font-weight: 400;
+}
+
+.dropdown_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  gap: 5%;
+}
+
+.icon {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15%;
+  padding: 5%;
+}
+
+.icons_col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container select{
+  width:80%;
+  height: 3em;
+}
+
+#product_info > *{
+  margin: 5% 0;
+}
+
+#product_descr
+,#product_descr img{
+  width: 50vw;
+}
+
+#colors img{
+  width: 28vw;
+}
+
+#product_info{
+  width: 28vw;
+  margin: 0 3%;
+}
+
+#section1{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 3%;
+}
+
+#others{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin: 8% 0;
+}
+
+#icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 2em 0;
+}
+
+#subscribe{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+}
+
+#qty_sec{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  margin-top: 5%;
+}
+
+#qty{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  height: 2em;
+}
+
+#qty button{
+  width: 20%;
+  background-color: white;
+  border:1px black solid;
+  height: 100%;
+}
+
+#qty div{
+  height: 100%;
+  width: 40%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#add{
+  background-color: #040A2B;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 10px;
+  width: 15em;
+  text-align: center;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}

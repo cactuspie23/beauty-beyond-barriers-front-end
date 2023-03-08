@@ -11,6 +11,7 @@ import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Signin from './pages/Signin/Signin'
 import BBB from './pages/BBB/BBB'
 import Mission from './pages/Mission/Mission'
+import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Footer from './components/Footer/Footer'
 
 // components
@@ -73,14 +74,18 @@ const App = () => {
         <Route
           path="/bbb"
           element={
-            <ProtectedRoute user={user}>
-              <BBB />
-            </ProtectedRoute>
+            <BBB />
           }
         />
         <Route
           path="/mission"
           element={<Mission />}
+        />
+        <Route
+          path="/products/:id"
+          element={
+            <ProductDetails />
+          }
         />
       </Routes>
       <Footer />
