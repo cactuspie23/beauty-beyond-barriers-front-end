@@ -14,6 +14,8 @@ import Mission from './pages/Mission/Mission'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Footer from './components/Footer/Footer'
 import Kit from './pages/Kit/Kit'
+import Tutorials from './pages/Tutorials/Tutorials'
+
 // components
 import NavBar from './components/NavBar/NavBar'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
@@ -91,6 +93,12 @@ const App = () => {
           path="/kit"
           element={
             <Kit />
+          }
+        />
+        <Route
+          path="/tutorials"
+          element={
+            <Tutorials />
           }
         />
       </Routes>

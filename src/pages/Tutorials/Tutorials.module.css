@@ -1,0 +1,43 @@
+.sec{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid black;
+  margin: 15vh 5vw;
+}
+
+.text{
+  width: 35vw;
+  margin-right: 5vw;
+}
+
+.text button{
+  margin-left: auto;
+}
+
+.image{
+  width: 50vw;
+}
+
+.recommend{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border: black solid 2px;
+  row-gap: 2em;
+}
+
+.product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img{
+  width: 2em;
+}
+
+.person_img{
+  width:100%;
+}
