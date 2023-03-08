@@ -1,9 +1,9 @@
 import styles from './ProductDetails.module.css'
 import Product from "../../components/Product/Product"
 // import { useParams } from 'react-router-dom'
-// import { useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 // import * as productService from "../../services/productService"
-
+import Switch from "react-switch";
 
 const ProductDetails = ({ user }) => {
   // const { id } = useParams()
@@ -16,6 +16,12 @@ const ProductDetails = ({ user }) => {
   //   }
   //   fetchProduct()
   // }, [id, setProduct])
+
+  const [isChecked, setIsChecked] = useState(false)
+
+  const handleChange = ({ target }) => {
+    setIsChecked(!isChecked)
+  }
 
   return (
     <main className={styles.container}>
@@ -100,10 +106,15 @@ const ProductDetails = ({ user }) => {
               <li>MAUVE</li>
             </ul>
             <img src='../../images/color.png' alt="color" />
+            <select>
+              <option>333 PERSUASIVE</option>
+              <option>420 REBELLIOUS ROSE</option>
+              <option>420 REBELLIOUS ROSE</option>
+              <option>320 DEFIANT CORAL</option>
+            </select>
           </div>
-          <select>
-            <option>333 PERSUASIVE</option>
-          </select>
+          <div>Price</div>
+          <div>AUTO SUBSCRIBE<Switch onChange={handleChange} checked={isChecked} /></div>
         </div>
       </div>
       <div id={styles.others}>
