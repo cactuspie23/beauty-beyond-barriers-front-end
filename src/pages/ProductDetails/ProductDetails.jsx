@@ -114,7 +114,38 @@ const ProductDetails = ({ user }) => {
             </select>
           </div>
           <div>Price</div>
-          <div>AUTO SUBSCRIBE<Switch onChange={handleChange} checked={isChecked} /></div>
+          <div id={styles.subscribe}>
+            <b>AUTO SUBSCRIBE</b>
+            <Switch onChange={handleChange} checked={isChecked} />
+          </div>
+          <div>E-Listener earn 15 points for each subscription order!</div>
+          <div id={styles.qty_sec}>
+            <div><b>QTY</b></div>
+            <div id={styles.qty}>
+              <button>-</button>
+              <div>1</div>
+              <button>+</button>
+            </div>
+            <button id={styles.add}>ADD TO BAG</button>
+          </div>
+          <div>
+            <div><b>FREE STANDARD SHIPPING & RETURNS</b></div>
+            <img src='../../images/logo-afterpay-colour.png' alt="afterpay" />
+            <span>Shop now and pay later with 4 payments of $9.00</span>
+            <div>SHARE</div>
+          </div>
+          <div>
+            <div><b>BENEFITS</b></div>
+            <div>Striking, longwear color in dimensional Creme finish.</div>
+          </div>
+          <div>
+            <div><b>COVERAGE</b></div>
+            <div>Medium to Full Coverage</div>
+          </div>
+          <div>
+            <div><b>Finish</b></div>
+            <div>Long lasting lipstick in Creme finish</div>
+          </div>
         </div>
       </div>
       <div id={styles.others}>
