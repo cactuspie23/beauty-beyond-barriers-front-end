@@ -130,7 +130,7 @@ const ProductDetails = ({ user }) => {
           </div>
           <div>
             <div><b>FREE STANDARD SHIPPING & RETURNS</b></div>
-            <img src='../../images/logo-afterpay-colour.png' alt="afterpay" />
+            <img src='../../images/ProductDetails/logo-afterpay-colour.png' alt="afterpay" />
             <span>Shop now and pay later with 4 payments of $9.00</span>
             <div>SHARE</div>
           </div>
