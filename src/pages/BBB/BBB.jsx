@@ -7,7 +7,7 @@ const BBB = ({ user }) => {
     <main className={styles.container}>
       <div id={styles.first_section} >
         <div id={styles.title_section}>
-          <img src="../images/people.png" alt="people" id={styles.people_img} />
+          <img src="../images/BBB/people.png" alt="people" id={styles.people_img} />
           <div id={styles.info_section}>
             <div id={styles.title}>
               <div>ONLINE EXCLUSIVE</div>
