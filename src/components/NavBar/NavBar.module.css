@@ -51,5 +51,9 @@ a:hover, li:hover {
   display: flex;
   align-items: flex-start;
   gap: 2.2rem;
-  margin: 0.1rem;
+  margin: 0 0.1rem;
+}
+
+.links > li {
+  height: 6vh;
 }

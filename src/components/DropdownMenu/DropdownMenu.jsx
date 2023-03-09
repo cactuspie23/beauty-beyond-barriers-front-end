@@ -1,9 +1,19 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import styles from './DropdownMenu.module.css'
 
 const DropdownMenu = () => {
+  const [dropdown, setDropdown] = useState(false)
+
   return(
-    <div className={styles.dropdown}>
+    <div 
+      className={
+        dropdown ? styles.dropdownClick : styles.dropdown
+      } 
+      onClick={() => setDropdown(!dropdown)}
+      // onMouseOver={() => setDropdown(true)}
+      // onMouseOut={() => setDropdown(false)}
+    >
       <div className={styles.dleft}>
         <div className={styles.head}>
           <h1>Beauty Beyond Barriers</h1>
@@ -40,7 +50,7 @@ const DropdownMenu = () => {
           <p>DESIGNED FOR MOBILITY</p>
           <p>ACCESSIBILITY TUTORIALS</p>
         </div>
-        <div>
+        <div className={styles.acc}>
           <img src="./images/Nav/Accessible.png" alt="Accessible" />
         </div>
       </div>
