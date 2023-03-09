@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import styles from './NavBar.module.css'
+import DropdownMenu from '../DropdownMenu/DropdownMenu'
 
 const NavBar = ({ user, handleLogout }) => {
+  const [dropdown, setDropdown] = useState(false)
+
   return (
     <nav>
       <div className={styles.line}></div>
@@ -33,7 +37,12 @@ const NavBar = ({ user, handleLogout }) => {
           <li>BEST SELLERS</li>
           <li>SKINCARE</li>
           <li>MAKEUP</li>
-          <li><Link to="/bbb">BBB</Link></li>
+          <li
+            onMouseEnter={() => setDropdown(true)} 
+            onMouseLeave={() => setDropdown(false)}
+          >
+            <Link to="/bbb">BBB</Link>
+          </li>
           <li>FRAGRANCES</li>
           <li>SETS & GIFTS</li>
           <li>RE-NUTRIV</li>
@@ -43,6 +52,7 @@ const NavBar = ({ user, handleLogout }) => {
           <li>OFFERS</li>
         </ul>
       </div>
+      {dropdown && <DropdownMenu />}
     </nav>
   )
 }
