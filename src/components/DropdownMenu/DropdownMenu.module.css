@@ -15,11 +15,10 @@
 
 .dropdown {
   display: flex;
-  margin: 0 1rem;
+  margin: 1.5rem;
   position: absolute;
   background-color: white;
   z-index: 5;
-  /* background-color: grey; */
 }
 
 .dropdownClick {
