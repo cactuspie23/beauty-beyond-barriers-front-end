@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from './NavBar.module.css'
 import DropdownMenu from '../DropdownMenu/DropdownMenu'
 
 const NavBar = ({ user, handleLogout }) => {
   const [dropdown, setDropdown] = useState(false)
+
+  useEffect(() => {
+
+  }, [dropdown])
 
   return (
     <nav>
@@ -15,14 +19,14 @@ const NavBar = ({ user, handleLogout }) => {
         </div>
         <div className={styles.right}>
           <div className={styles.text}>
-          {user ?
-            <>
-              <p>Welcome, {user.name}</p>
-              <p><Link to="" onClick={handleLogout}>LOG OUT</Link></p>         
-            </>
-          :
-            <p><Link to="/signin">SIGN IN</Link></p>
-          }
+            {user ?
+              <>
+                <p>Welcome, {user.name}</p>
+                <p><Link to="" onClick={handleLogout}>LOG OUT</Link></p>
+              </>
+              :
+              <p><Link to="/signin">SIGN IN</Link></p>
+            }
             <p>Join Estee E-List Loyalty</p>
           </div>
           <div className={styles.icons}>
@@ -38,10 +42,13 @@ const NavBar = ({ user, handleLogout }) => {
           <li>SKINCARE</li>
           <li>MAKEUP</li>
           <li
-            onMouseEnter={() => setDropdown(true)} 
+            onMouseEnter={() => setDropdown(true)}
             onMouseLeave={() => setDropdown(false)}
           >
             <Link to="/bbb">BBB</Link>
+            <div id={styles.dropdown_container}>
+              {dropdown && <DropdownMenu />}
+            </div>
           </li>
           <li>FRAGRANCES</li>
           <li>SETS & GIFTS</li>
@@ -52,7 +59,6 @@ const NavBar = ({ user, handleLogout }) => {
           <li>OFFERS</li>
         </ul>
       </div>
-      {dropdown && <DropdownMenu />}
     </nav>
   )
 }
