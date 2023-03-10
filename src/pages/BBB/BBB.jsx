@@ -36,7 +36,7 @@ const BBB = ({ user }) => {
                 </div>
               </div>
             </div>
-            <Link>
+            <Link to="/tutorials">
               <button id={styles.tutorials_btn}>WATCH TUTORIALS</button>
             </Link>
           </div>
