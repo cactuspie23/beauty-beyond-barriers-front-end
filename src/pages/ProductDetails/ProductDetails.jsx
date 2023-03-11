@@ -1,7 +1,7 @@
 import styles from './ProductDetails.module.css'
 import Product from "../../components/Product/Product"
 // import { useParams } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 // import * as productService from "../../services/productService"
 import Switch from "react-switch";
 

@@ -1,8 +1,22 @@
 import styles from './BBB.module.css'
 import { Link } from 'react-router-dom'
 import Product from '../../components/Product/Product'
+import { useEffect, useState } from 'react'
+import * as productService from "../../services/productService"
 
 const BBB = ({ user }) => {
+  const [products, setProducts] = useState([])
+
+  useEffect(()=>{
+    const fetchProducts = async()=>{
+      const data = await productService.index()
+      // console.log(data)
+      setProducts(data)
+    }
+    fetchProducts()
+    
+  }, [])
+
   return (
     <main className={styles.container}>
       <div id={styles.first_section} >
@@ -48,7 +62,7 @@ const BBB = ({ user }) => {
         </div>
       </div>
       <div id={styles.second_section} className={styles.section}>
-        <div>Category Name</div>
+        <div>Makeup</div>
         <div className={styles.filter}>
           <div>FILTER BY</div>
           <div>COLLECTION</div>
@@ -56,12 +70,10 @@ const BBB = ({ user }) => {
           <div>COLOR FAMILY</div>
         </div>
         <div className={styles.products}>
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
+          {products.map((product) => (
+            (product.category === "Makeup") ? <Product product={product} key={product._id} />: null
+            // console.log(product)
+          ))}
         </div>
       </div>
       <div id={styles.third_section} className={styles.section}>
