@@ -11,8 +11,6 @@ const DropdownMenu = () => {
         dropdown ? styles.dropdownClick : styles.dropdown
       } 
       onClick={() => setDropdown(!dropdown)}
-      // onMouseOver={() => setDropdown(true)}
-      // onMouseOut={() => setDropdown(false)}
     >
       <div className={styles.dleft}>
         <div className={styles.head}>
@@ -25,7 +23,7 @@ const DropdownMenu = () => {
             <li>Best Sellers</li>
             <li><Link to="/bbb">Makeup</Link></li>
             <li><Link to="/bbb">Skincare</Link></li>
-            <li><Link>Sets & Gifts</Link></li>
+            <li><Link to="/kit">Sets & Gifts</Link></li>
             <li>Collections</li>
           </ul>
         </div>
@@ -33,7 +31,7 @@ const DropdownMenu = () => {
           <h3>LEARN MORE</h3>
           <ul>
             <li><Link to="/mission">Our Mission</Link></li>
-            <li><Link>Accessibility Makeup Tutorials</Link></li>
+            <li><Link to="/tutorials">Accessibility Makeup Tutorials</Link></li>
             <li>eSSENTIAL Accessibility Assistive Technology App</li>
           </ul>
         </div>
