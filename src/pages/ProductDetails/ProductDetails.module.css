@@ -4,6 +4,8 @@
 
 .dropdown{
   width: 100%;
+  border-bottom: solid 1px;
+  padding-bottom: 1rem;
 }
 
 .container h2{
@@ -14,6 +16,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+}
+
+.dropdown_title > h2 {
+  font-family: 'Optima';
+  font-size: 1.8rem;
+}
+
+.dropdown_title > div {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+.use > a > img{
+  max-width: 25vw;
 }
 
 .container ul{
@@ -48,6 +65,10 @@
 
 #product_info > *{
   margin: 5% 0;
+}
+
+#product_info > h1 {
+  font-family: 'Optima';
 }
 
 #product_descr
