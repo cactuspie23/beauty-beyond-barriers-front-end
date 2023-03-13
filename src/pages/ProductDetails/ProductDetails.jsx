@@ -1,6 +1,5 @@
 import styles from './ProductDetails.module.css'
-// import Product from "../../components/Product/Product"
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import * as productService from "../../services/productService"
 import Switch from "react-switch";
@@ -8,6 +7,7 @@ import Switch from "react-switch";
 const ProductDetails = () => {
   const {id} = useParams()
   const [product, setProduct] = useState(null)
+  const [showMore, setShowMore] = useState(false)
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -34,9 +34,12 @@ const ProductDetails = () => {
             <div className={styles.dropdown}>
               <div className={styles.dropdown_title}>
                 <h2>Product Details</h2>
-                <div>+</div>
+                <div>-</div>
               </div>
               <div>
+                {product.description}
+              </div>
+              {/* <div>
                 <b>Accessibility Features</b><br />
                 Grip friendly: Lorem ipsum dolor sit amet consectetur.<br />
                 Highly-pigmented: Lorem ipsum dolor sit amet consectetur.<br />
@@ -53,13 +56,26 @@ const ProductDetails = () => {
               <div>
                 <b>Packaging Details</b><br />
                 Lorem ipsum dolor sit amet consectetur. Aliquam morbi nulla sed et aliquet. Congue elit fringilla diam pulvinar ut sed.
-              </div>
+              </div> */}
             </div>
             <div className={styles.dropdown}>
-              <div className={styles.dropdown_title}>
+              <div className={styles.dropdown_title} onClick={() => setShowMore(!showMore)}>
                 <h2>How To Use</h2>
-                <div>+</div>
+                <div>{showMore ? '-' : '+'}</div>
               </div>
+              {showMore ? 
+                <div className={styles.use}>
+                  <p>As someone who is legally blind, the most common question Alice gets is, "Why do you still wear makeup?" Watch this video to see her makeup routine and learn about her favorite products.</p>
+                  <Link to='/tutorials'><p>LEARN MORE ON HOW TO USE OUR ACCESSIBLE PRODUCTS HERE.</p></Link>
+                  <p>Alice's Lipstick Tutorial</p>
+                  <Link to='/tutorials'>
+                    <img src='../images/Tutorials/Alice.png' alt='Alice' />
+                  </Link>
+                </div>
+                : 
+              
+                ''
+              }
             </div>
             <div className={styles.dropdown}>
               <div className={styles.dropdown_title}>
@@ -72,7 +88,10 @@ const ProductDetails = () => {
         <div id={styles.product_info}>
           <h1>{product.name}</h1>
           <div>
-            Stars / Num of reviews
+            <img src='../images/star.png' alt='star' />
+            <img src='../images/star.png' alt='star' />
+            <img src='../images/star.png' alt='star' />
+            <img src='../images/star.png' alt='star' />
             <div>Read Reviews</div>
           </div>
           <div>{product.shortDescription}</div>
@@ -84,17 +103,17 @@ const ProductDetails = () => {
               </div>
               <div className={styles.icon}>
                 <img src="../images/grip-friendly.png" alt='accessible-icons' />
-                <div>Accessible</div>
+                <div>Grip-Friendly</div>
               </div>
             </div>
             <div className={styles.icons_col}>
               <div className={styles.icon}>
                 <img src="../images/highly-pigmented.png" alt='accessible-icons' />
-                <div>Accessible</div>
+                <div>Highly Pigmented</div>
               </div>
               <div className={styles.icon}>
                 <img src="../images/easy-applicator.png" alt='accessible-icons' />
-                <div>Accessible</div>
+                <div>Easy Applicator</div>
               </div>
             </div>
           </div>
@@ -115,7 +134,7 @@ const ProductDetails = () => {
               <option>320 DEFIANT CORAL</option>
             </select>
           </div>
-          <div>${product.price}.00</div>
+          <div>{product.size}  <b>${product.price}.00</b></div>
           <div id={styles.subscribe}>
             <b>AUTO SUBSCRIBE</b>
             <Switch onChange={handleChange} checked={isChecked} />
