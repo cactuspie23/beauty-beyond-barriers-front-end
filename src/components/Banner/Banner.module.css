@@ -3,31 +3,69 @@
   width: 100vw;
 }
 
-.head > img {
-  width: 100vw;
-  height: auto;
+.head>img {
+  height: 40vh;
   position: absolute;
+  right: -7.5em;
 }
 
 .textBlock {
   position: absolute;
   z-index: 4;
-  width: 35vw;
-  margin-top: 20vh;
-  margin-left: 8rem;
+  margin-top: 5vh;
+  margin-left: 1rem;
+  width: 50vw;
 }
 
-.textBlock > h3 {
+.textBlock>h3 {
   font-weight: 400;
+  font-size: xx-small;
 }
 
-.textBlock > h1 {
+.textBlock>h1 {
   font-family: 'Optima';
-  font-size: 3.7rem;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 
-.textBlock > p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+.textBlock>p {
+  font-size: xx-small;
+}
+
+.textBlock button {
+  width: 50%;
+  font-size: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .head>img {
+    width: 100vw;
+    height: auto;
+    right: 0;
+  }
+
+  .textBlock {
+    width: 35vw;
+    margin-top: 20vh;
+    margin-left: 8rem;
+  }
+
+  .textBlock>h1 {
+    font-size: 3.7rem;
+  }
+
+  .textBlock>h3 {
+  font-weight: 400;
+  font-size: large;
+}
+
+  .textBlock>p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .textBlock button {
+    width: 40%;
+    font-size: 1rem;
+  }
 }
