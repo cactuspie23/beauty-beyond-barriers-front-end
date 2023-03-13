@@ -1,13 +1,8 @@
 .container{
   margin: 2% 0;
   text-align: left;
-  width: 20vw;
-  height: 80vh;
+  max-width: 20vw;
   font-family: 'Optima';
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 #title{
@@ -15,13 +10,12 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   gap: 5%;
-  margin: 0.8rem 0;
+  margin: 0.5rem 0;
 }
 
-#product_img{
+#kit_img{
   width:20vw;
   margin-bottom: 10%;
-  box-shadow: 1px 1px 1px 2px rgba(0,0,0,.3);
 }
 
 #accessibility_icon{
@@ -35,7 +29,7 @@ a:hover {
 
 #description, #review{
   font-size: 1em;
-  margin: 0.6rem 0;
+  margin: 0.5rem 0;
 }
 
 #review{
@@ -48,6 +42,6 @@ a:hover {
 #price{
   font-size: 1em;
   font-weight: 600;
+  margin: 0.8rem 0;
 }
-
 

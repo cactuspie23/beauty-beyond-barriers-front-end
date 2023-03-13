@@ -23,7 +23,7 @@ const DropdownMenu = () => {
             <li>Best Sellers</li>
             <li><Link to="/bbb">Makeup</Link></li>
             <li><Link to="/bbb">Skincare</Link></li>
-            <li><Link to="/kit">Sets & Gifts</Link></li>
+            <li><Link to="/kits">Sets & Gifts</Link></li>
             <li>Collections</li>
           </ul>
         </div>

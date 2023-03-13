@@ -28,6 +28,7 @@
   margin-bottom: 0.5em;
   padding-bottom: 1em;
   border-bottom: 1px solid #B1B1B1;
+  font-family: 'Optima';
 }
 
 .icon {
@@ -84,14 +85,16 @@
 }
 
 #title div:nth-child(2) {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 600;
+  font-family: 'Optima';
   margin: 0.5em 0;
 }
 
 #title div:nth-child(3) {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 500;
+  font-family: 'AkzidenzGrotesk';
 }
 
 #tutorials_btn {
@@ -112,6 +115,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 400;
+  margin: 1rem 0;
 }
 
 #info_section {
