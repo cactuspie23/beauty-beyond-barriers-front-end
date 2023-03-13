@@ -5,7 +5,7 @@ const Product = ({ product }) => {
   const getReviewNum = () => {
     let stars = []
     for(let i = 0;i < Math.floor(Math.random()*5)+1;i++){
-      stars.push(<img src='images/star.png' alt='star' />)
+      stars.push(<img src='images/star.png' alt='star' key={i} />)
     }
     return stars
   }
