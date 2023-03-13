@@ -1,5 +1,5 @@
 import styles from './Kit.module.css'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Product from '../../components/Product/Product'
 
 const Kit = ({ user }) => {

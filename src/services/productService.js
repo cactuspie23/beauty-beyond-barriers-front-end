@@ -24,6 +24,7 @@ const show = async (id) => {
   }
 }
 
+
 export { 
   index, 
   show 
