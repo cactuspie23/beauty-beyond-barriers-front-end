@@ -1,8 +1,7 @@
 import styles from './BBB.module.css'
 import { Link } from 'react-router-dom'
 import Product from '../../components/Product/Product'
-import { useEffect, useState } from 'react'
-import * as productService from "../../services/productService"
+
 
 const BBB = ({ products }) => {
   return (
@@ -67,7 +66,7 @@ const BBB = ({ products }) => {
         </div>
       </div>
       <div id={styles.third_section} className={styles.section}>
-        <div>Category Name</div>
+        <div>Skincare</div>
         <div className={styles.filter}>
           <div>FILTER BY</div>
           <div className={styles.option}>
@@ -100,9 +99,9 @@ const BBB = ({ products }) => {
           </div>
         </div>
         <div className={styles.products}>
-        {products.map(product => (
-          <Product product={product} key={product._id} />
-        ))}
+        {products.map((product, idx) => (
+            (product.category === "Skincare") ? <Product product={product} key={idx} /> : null
+          ))}
         </div>
       </div>
     </main>
