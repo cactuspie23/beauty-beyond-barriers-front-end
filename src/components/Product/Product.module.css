@@ -1,6 +1,8 @@
 .container{
   margin: 2% 0;
   text-align: left;
+  width: 20vw;
+  height: 80vh;
 }
 
 #title{
