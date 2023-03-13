@@ -8,17 +8,16 @@ const BBB = ({ user }) => {
   const [products, setProducts] = useState([])
 
   useEffect(()=>{
-    const fetchProducts = async()=>{
+    const fetchProducts = async () => {
       const data = await productService.index()
-      // console.log(data)
       setProducts(data)
     }
     fetchProducts()
-    
   }, [])
 
   return (
     <main className={styles.container}>
+      {/* {console.log(products[0].name)} */}
       <div id={styles.first_section} >
         <div id={styles.title_section}>
           <img src="../images/BBB/people.png" alt="people" id={styles.people_img} />
@@ -70,8 +69,9 @@ const BBB = ({ user }) => {
           <div>COLOR FAMILY</div>
         </div>
         <div className={styles.products}>
-          {products.map((product) => (
-            (product.category === "Makeup") ? <Product product={product} key={product._id} />: null
+          {products.map((product, idx) => (
+            // console.log(product.name)
+            (product.category === "Makeup") ? <Product product={product} key={idx} /> : null
             // console.log(product)
           ))}
         </div>
