@@ -28,7 +28,7 @@ button {
   text-align: center;
 }
 
-.section:first-child {
+.category {
   font-family: 'Optima';
 }
 
@@ -88,7 +88,9 @@ button {
   margin: 3% 0;
 }
 
-
+.products > div > button {
+  margin: 1.5rem 0;
+}
 
 #sort_by{
   position: absolute;

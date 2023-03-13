@@ -10,8 +10,14 @@ const KitCard = (props) => {
       </div>
       <div id={styles.description}>{props.shortDescription}</div>
       <div id={styles.review}>
-        <div>Stars</div>
-        <div>Number of Reiviews</div>
+        <div>
+          <img src='images/star.png' alt='star' />
+          <img src='images/star.png' alt='star' />
+          <img src='images/star.png' alt='star' />
+          <img src='images/star.png' alt='star' />
+          <img src='images/star.png' alt='star' />
+        </div>
+        <div>({Math.floor(Math.random()*100)})</div>
       </div>
       <div>{props.description}</div>
       <div id={styles.price}>Yours with any ${props.price} purchase.*</div>

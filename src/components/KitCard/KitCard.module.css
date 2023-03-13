@@ -10,6 +10,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 5%;
+  margin: 0.5rem 0;
 }
 
 #kit_img{
@@ -28,6 +29,7 @@
 
 #description, #review{
   font-size: 1em;
+  margin: 0.5rem 0;
 }
 
 #review{
@@ -40,5 +42,6 @@
 #price{
   font-size: 1em;
   font-weight: 600;
+  margin: 0.8rem 0;
 }
 

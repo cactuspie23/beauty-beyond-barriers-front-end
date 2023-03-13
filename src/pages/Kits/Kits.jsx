@@ -35,7 +35,7 @@ const Kits = () => {
         </div>
       </div>
       <div id={styles.second_section} className={styles.section}>
-        <div>Accessible Beauty Kits</div>
+        <div className={styles.category}>Accessible Beauty Kits</div>
         <div className={styles.filter}>
           <div>FILTER BY</div>
           <div>COLLECTION</div>
