@@ -1,8 +1,8 @@
-import styles from './Kit.module.css'
-// import { Link } from 'react-router-dom'
-import Product from '../../components/Product/Product'
+import styles from './Kits.module.css'
+import KitCard from '../../components/KitCard/KitCard'
+import { kitData } from '../../components/KitCard/KitsData.js'
 
-const Kit = ({ user }) => {
+const Kits = () => {
   return (
     <main className={styles.container}>
       <div id={styles.first_section} >
@@ -43,46 +43,23 @@ const Kit = ({ user }) => {
           <div>COLOR FAMILY</div>
         </div>
         <div className={styles.products}>
+          {kitData.map((kit, i) => 
           <div>
-            <Product />
+            <KitCard
+            key={i}
+            name={kit.name}
+            image={kit.image}
+            shortDescription={kit.shortDescription}
+            description={kit.description}
+            price={kit.price}
+            />
             <button>ADD GIFT</button>
           </div>
-          <div>
-            <Product />
-            <button>ADD GIFT</button>
-          </div>
-          <div>
-            <Product />
-            <button>ADD GIFT</button>
-          </div>
-          <div>
-            <Product />
-            <button>ADD GIFT</button>
-          </div>
-          <div>
-            <Product />
-            <button>ADD GIFT</button>
-          </div>
-          <div>
-            <Product />
-            <button>ADD GIFT</button>
-          </div>
-          <div>
-            <Product />
-            <button>ADD GIFT</button>
-          </div>
-          <div>
-            <Product />
-            <button>ADD GIFT</button>
-          </div>
-          <div>
-            <Product />
-            <button>ADD GIFT</button>
-          </div>
+          )}
         </div>
       </div>
     </main>
   )
 }
 
-export default Kit
+export default Kits

@@ -28,6 +28,10 @@ button {
   text-align: center;
 }
 
+.section:first-child {
+  font-family: 'Optima';
+}
+
 .option{
   display: flex;
   justify-content: center;
