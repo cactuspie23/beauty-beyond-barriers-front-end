@@ -3,8 +3,9 @@ import { useParams, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import * as productService from "../../services/productService"
 import Switch from "react-switch";
+import Product from '../../components/Product/Product';
 
-const ProductDetails = () => {
+const ProductDetails = ({ products }) => {
   const {id} = useParams()
   const [product, setProduct] = useState(null)
   const [showMore, setShowMore] = useState(false)
@@ -170,9 +171,9 @@ const ProductDetails = () => {
         </div>
       </div>
       <div id={styles.others}>
-        {/* <Product></Product>
-        <Product></Product>
-        <Product></Product> */}
+        {products.slice(0,3).map((product, i) => (
+          <Product product={product} key={i} />
+        ))}
       </div>
     </main >
   )
