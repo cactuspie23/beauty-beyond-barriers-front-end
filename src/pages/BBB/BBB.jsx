@@ -1,8 +1,7 @@
 import styles from './BBB.module.css'
 import { Link } from 'react-router-dom'
 import Product from '../../components/Product/Product'
-import { useEffect, useState } from 'react'
-import * as productService from "../../services/productService"
+
 
 const BBB = ({ products }) => {
   return (
