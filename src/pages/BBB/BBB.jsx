@@ -59,9 +59,7 @@ const BBB = ({ products }) => {
         </div>
         <div className={styles.products}>
           {products.map((product, idx) => (
-            // console.log(product.name)
             (product.category === "Makeup") ? <Product product={product} key={idx} /> : null
-            // console.log(product)
           ))}
         </div>
       </div>

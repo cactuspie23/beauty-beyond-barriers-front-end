@@ -20,7 +20,6 @@ const Product = ({ product }) => {
             <div id={styles.name}>{product.name}</div>
             <img src='../../images/universal-icon.png' alt='accessible-icon' id={styles.accessibility_icon} />
           </div>
-          <div id={styles.description}>{product.shortDescription}</div>
           <div id={styles.review}>
             <div>
               {
@@ -29,6 +28,7 @@ const Product = ({ product }) => {
             </div>
             <div>({Math.floor(Math.random()*1000)})</div>
           </div>
+          <div id={styles.description}>{product.shortDescription}</div>
           <div id={styles.price}>${product.price}.00</div>
         {/* </div> */}
       </Link>
