@@ -1,0 +1,47 @@
+.container{
+  margin: 2% 0;
+  text-align: left;
+  max-width: 20vw;
+  font-family: 'Optima';
+}
+
+#title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  margin: 0.5rem 0;
+}
+
+#kit_img{
+  width:20vw;
+  margin-bottom: 10%;
+}
+
+#accessibility_icon{
+  width: 15px;
+}
+
+#name{
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+#description, #review{
+  font-size: 1em;
+  margin: 0.5rem 0;
+}
+
+#review{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+}
+
+#price{
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0.8rem 0;
+}
+

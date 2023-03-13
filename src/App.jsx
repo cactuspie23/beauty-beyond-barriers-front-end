@@ -13,7 +13,7 @@ import BBB from './pages/BBB/BBB'
 import Mission from './pages/Mission/Mission'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Footer from './components/Footer/Footer'
-import Kit from './pages/Kit/Kit'
+import Kits from './pages/Kits/Kits'
 import Tutorials from './pages/Tutorials/Tutorials'
 
 // components
@@ -100,9 +100,9 @@ const App = () => {
           }
         />
         <Route
-          path="/kit"
+          path="/kits"
           element={
-            <Kit />
+            <Kits />
           }
         />
         <Route
