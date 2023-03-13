@@ -1,33 +1,35 @@
 import styles from './ProductDetails.module.css'
-import Product from "../../components/Product/Product"
-// import { useParams } from 'react-router-dom'
-import { useState} from 'react'
-// import * as productService from "../../services/productService"
+// import Product from "../../components/Product/Product"
+import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import * as productService from "../../services/productService"
 import Switch from "react-switch";
 
-const ProductDetails = ({ user }) => {
-  // const { id } = useParams()
-  // const [product, setProduct] = useState({})
+const ProductDetails = () => {
+  const {id} = useParams()
+  const [product, setProduct] = useState(null)
 
-  // useEffect(() => {
-  //   const fetchProduct = async () => {
-  //     const data = await productService.show(id)
-  //     setProduct(data)
-  //   }
-  //   fetchProduct()
-  // }, [id, setProduct])
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const data = await productService.show(id)
+      setProduct(data)
+    }
+    fetchProduct()
+  }, [id])
 
   const [isChecked, setIsChecked] = useState(false)
-
+  
   const handleChange = ({ target }) => {
     setIsChecked(!isChecked)
   }
 
+  if(!product) return <main>Loading...</main>
+  
   return (
     <main className={styles.container}>
       <div id={styles.section1}>
         <div id={styles.product_descr}>
-          <img src='../../images/lipstick2.png' alt="lipstick" />
+          <img src={product.imgUrl} alt={product.name} />
           <div id={styles.product_info}>
             <div className={styles.dropdown}>
               <div className={styles.dropdown_title}>
@@ -68,12 +70,12 @@ const ProductDetails = ({ user }) => {
           </div>
         </div>
         <div id={styles.product_info}>
-          <h1>Product Name</h1>
+          <h1>{product.name}</h1>
           <div>
             Stars / Num of reviews
             <div>Read Reviews</div>
           </div>
-          <div>Description</div>
+          <div>{product.shortDescription}</div>
           <div id={styles.icons}>
             <div className={styles.icons_col}>
               <div className={styles.icon}>
@@ -113,7 +115,7 @@ const ProductDetails = ({ user }) => {
               <option>320 DEFIANT CORAL</option>
             </select>
           </div>
-          <div>Price</div>
+          <div>${product.price}.00</div>
           <div id={styles.subscribe}>
             <b>AUTO SUBSCRIBE</b>
             <Switch onChange={handleChange} checked={isChecked} />
@@ -149,9 +151,9 @@ const ProductDetails = ({ user }) => {
         </div>
       </div>
       <div id={styles.others}>
+        {/* <Product></Product>
         <Product></Product>
-        <Product></Product>
-        <Product></Product>
+        <Product></Product> */}
       </div>
     </main >
   )

@@ -4,17 +4,7 @@ import Product from '../../components/Product/Product'
 import { useEffect, useState } from 'react'
 import * as productService from "../../services/productService"
 
-const BBB = ({ user }) => {
-  const [products, setProducts] = useState([])
-
-  useEffect(()=>{
-    const fetchProducts = async () => {
-      const data = await productService.index()
-      setProducts(data)
-    }
-    fetchProducts()
-  }, [])
-
+const BBB = ({ products }) => {
   return (
     <main className={styles.container}>
       {/* {console.log(products[0].name)} */}
@@ -110,12 +100,9 @@ const BBB = ({ user }) => {
           </div>
         </div>
         <div className={styles.products}>
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
+        {products.map(product => (
+          <Product product={product} key={product._id} />
+        ))}
         </div>
       </div>
     </main>
