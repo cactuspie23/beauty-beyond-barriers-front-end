@@ -31,7 +31,7 @@ const App = () => {
   const navigate = useNavigate()
   const [user, setUser] = useState(authService.getUser())
   const [products, setProducts] = useState([])
-  const [windowWidth, setWindowWidth] = useState(1024)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
   const getSize= () => {
     const newWidth = window.innerWidth;
@@ -101,7 +101,7 @@ const App = () => {
         />
         <Route
           path="/mission"
-          element={<Mission />}
+          element={<Mission windowWidth={windowWidth} />}
         />
         <Route
           path="/products/:id"

@@ -132,3 +132,109 @@
   padding: 2rem;
   line-height: 178%;
 }
+
+@media only screen and (max-width: 768px) {
+  .top {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .left {
+    width: 40%;
+    margin: 1rem;
+  }
+  
+  .left > h1 {
+    font-size: 40px;
+    margin-left: 5%;
+    position: absolute;
+    left: 0;
+    top: 4em;
+    width: 35%;
+  }
+  
+  .top > h3 {
+    font-size: 20px;
+    position: relative;
+    font-weight: 400;
+    margin: 5%;
+  }
+  
+  .right {
+    margin: 0;
+    max-width: 100%;
+  }
+  
+  .mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align-last: center;
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  .mission > h2 {
+    font-size: 1.4em;
+  }
+  
+  .mission > p {
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    text-align: justify;
+    text-align-last: left;
+  }
+  
+  .accessibility > h2 {
+    font-size:2rem;
+  }
+  
+  .icons {
+    flex-wrap: wrap;
+  }
+  
+  .icons > div {
+    margin: 1rem 0.5rem;
+  }
+
+  .icons > div > img{
+    width: 80%;
+  }
+
+  .example {
+    margin: 5rem 0;
+    padding: 0;
+    font-size: larger;
+  }
+  
+  .example > h2 {
+    max-width: 100%;
+    text-align: center;
+    line-height: 3em;
+  }
+  
+  .makeup p{
+    font-weight: 600;
+    margin: 35% 0;
+  }
+  
+  .bottom {
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2em;
+    filter: none;
+  }
+  
+  .bottom img {
+    margin: 0;
+  }
+  
+  .bottom p {
+    font-size: 22px;
+    padding: 0;
+    text-align: justify;
+  }
+}
