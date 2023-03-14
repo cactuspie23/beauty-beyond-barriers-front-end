@@ -1,19 +1,9 @@
 import styles from './Landing.module.css'
 import Banner from '../../components/Banner/Banner'
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
-const Landing = () => {
+const Landing = ({windowWidth}) => {
 
-  const [windowWidth, setWindowWidth] = useState(1024)
-
-  const getSize= () => {
-    const newWidth = window.innerWidth;
-    setWindowWidth(newWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", getSize);
-  }, []);
 
 
   return (

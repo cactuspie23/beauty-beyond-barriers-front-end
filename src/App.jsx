@@ -31,6 +31,16 @@ const App = () => {
   const navigate = useNavigate()
   const [user, setUser] = useState(authService.getUser())
   const [products, setProducts] = useState([])
+  const [windowWidth, setWindowWidth] = useState(1024)
+
+  const getSize= () => {
+    const newWidth = window.innerWidth;
+    setWindowWidth(newWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", getSize);
+  }, []);
 
   const handleLogout = () => {
     authService.logout()
@@ -54,7 +64,7 @@ const App = () => {
     <>
       <NavBar user={user} handleLogout={handleLogout} />
       <Routes>
-        <Route path="/" element={<Landing user={user} />} />
+        <Route path="/" element={<Landing user={user} windowWidth={windowWidth} />} />
         {/* <Route
           path="/signup"
           element={<Signup handleSignupOrLogin={handleSignupOrLogin} />}
@@ -86,7 +96,7 @@ const App = () => {
         <Route
           path="/bbb"
           element={
-            <BBB products={products} />
+            <BBB products={products} windowWidth={windowWidth} />
           }
         />
         <Route
