@@ -40,13 +40,15 @@ const Footer = ({ user }) => {
           <h1>Privacy & Terms</h1>
           <div>Privacy Policy <span>(NEW)</span></div>
           <div>Do Not Sell or Share My Personal Information / Targeted Ads</div>
+          <div>Terms & Conditions</div>
+          <div>Accessibility</div>
         </div>
       </div>
 
       <div className={styles.large_sec} id={styles.second_large_sec}>
         <div className={styles.sign_up}>
           <h1>Sign Up for Email</h1>
-          <div>
+          <div className={styles.inputs}>
             <input type="email" placeholder='SAMPLE@EMAIL.COM' />
             <button>GO</button>
           </div>
@@ -57,7 +59,7 @@ const Footer = ({ user }) => {
         </div>
         <div className={styles.sign_up}>
           <h1>Sign Up For SMS</h1>
-          <div>
+          <div className={styles.inputs}>
             <input type="tel" placeholder='(123)122-2234' />
             <button>GO</button>
           </div>
