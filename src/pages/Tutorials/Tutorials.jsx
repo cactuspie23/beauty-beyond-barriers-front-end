@@ -1,6 +1,6 @@
 import styles from './Tutorials.module.css'
 
-const Tutorials = ({ user }) => {
+const Tutorials = () => {
   return (
     <main className={styles.container}>
       <h1>BEYOND BEAUTY TUTORIALS</h1>
@@ -12,18 +12,21 @@ const Tutorials = ({ user }) => {
           <div className={styles.recommend}>
             <div className={styles.product}>
               <input type="checkbox" />
-              <img src='../../images/lipstick2.png' alt="lipstick" />
+              <img src='../../images/Tutorials/EyeRepair.png' alt="lipstick" />
               <label >Eye Repair</label>
+              <div>$82.00</div>
             </div>
             <div className={styles.product}>
               <input type="checkbox" />
-              <img src='../../images/lipstick2.png' alt="lipstick" />
+              <img src='../../images/Tutorials/Foundation.png' alt="lipstick" />
               <label >Radiance Liquid Foundation</label>
+              <div>$48.00</div>
             </div>
             <div className={styles.product}>
               <input type="checkbox" />
-              <img src='../../images/lipstick2.png' alt="lipstick" />
+              <img src='../../images/Tutorials/Lipstick.png' alt="lipstick" />
               <label >Color Envy Lipstick</label>
+              <div>$36.00</div>
             </div>
             <button>ADD TO BAG</button>
           </div>
@@ -34,7 +37,7 @@ const Tutorials = ({ user }) => {
       </div>
       <div className={styles.sec}>
         <div className={styles.image}>
-          <img src='../../images/Tutorials/Alice.png' alt="Suzy" className={styles.person_img} />
+          <img src='../../images/Tutorials/Alice.png' alt="Alice" className={styles.person_img} />
         </div>
         <div className={styles.text}>
           <h2>Alice’s Tutorial</h2>
@@ -43,17 +46,20 @@ const Tutorials = ({ user }) => {
             <div className={styles.product}>
               <input type="checkbox" />
               <img src='../../images/lipstick2.png' alt="lipstick" />
-              <label >Eye Repair</label>
+              <label >Red Matte Lipstick</label>
+              <div>$36.00</div>
             </div>
             <div className={styles.product}>
               <input type="checkbox" />
-              <img src='../../images/lipstick2.png' alt="lipstick" />
+              <img src='../../images/Tutorials/Foundation.png' alt="lipstick" />
               <label >Radiance Liquid Foundation</label>
+              <div>$48.00</div>
             </div>
             <div className={styles.product}>
               <input type="checkbox" />
-              <img src='../../images/lipstick2.png' alt="lipstick" />
-              <label >Color Envy Lipstick</label>
+              <img src='../../images/Tutorials/LipBalm.png' alt="lipstick" />
+              <label >Lip Balm</label>
+              <div>$36.00</div>
             </div>
             <button>ADD TO BAG</button>
           </div>
@@ -67,24 +73,27 @@ const Tutorials = ({ user }) => {
           <div className={styles.recommend}>
             <div className={styles.product}>
               <input type="checkbox" />
-              <img src='../../images/lipstick2.png' alt="lipstick" />
-              <label >Eye Repair</label>
-            </div>
-            <div className={styles.product}>
-              <input type="checkbox" />
-              <img src='../../images/lipstick2.png' alt="lipstick" />
-              <label >Radiance Liquid Foundation</label>
-            </div>
-            <div className={styles.product}>
-              <input type="checkbox" />
-              <img src='../../images/lipstick2.png' alt="lipstick" />
+              <img src='../../images/Tutorials/Lipstick.png' alt="lipstick" />
               <label >Color Envy Lipstick</label>
+              <div>$36.00</div>
+            </div>
+            <div className={styles.product}>
+              <input type="checkbox" />
+              <img src='../../images/Tutorials/LipBalm.png' alt="lipstick" />
+              <label >Lip Balm</label>
+              <div>$36.00</div>
+            </div>
+            <div className={styles.product}>
+              <input type="checkbox" />
+              <img src='../../images/Tutorials/NightRepair.png' alt="lipstick" />
+              <label >Advanced Night Repair</label>
+              <div>$72.00</div>
             </div>
             <button>ADD TO BAG</button>
           </div>
         </div>
         <div className={styles.image}>
-          <img src='../../images/Tutorials/Jasmine.png' alt="Suzy" className={styles.person_img} />
+          <img src='../../images/Tutorials/Jasmine.png' alt="Jasmine" className={styles.person_img} />
         </div>
       </div>
     </main>
