@@ -3,6 +3,17 @@
   padding: 5vh 5vw;
 }
 
+.container h1 {
+  font-family: 'Optima';
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.container > div {
+  font-family: 'AkzidenzGrotesk';
+  font-size: 1.2rem;
+}
+
 .sec{
   display: flex;
   justify-content: center;
@@ -20,6 +31,12 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.text h2 {
+  font-family: 'Optima';
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 .container h2{
@@ -45,7 +62,7 @@
 }
 
 .product{
-  font-size: 1.3em;
+  font-size: 1.2em;
   gap: 1em;
   /* padding: 0.5em 2em; */
   display: flex;
@@ -60,6 +77,10 @@
 
 .product img{
   width: 2em;
+}
+
+.product div{
+  font-size: 1.2rem;
 }
 
 .person_img{

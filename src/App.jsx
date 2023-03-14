@@ -106,7 +106,7 @@ const App = () => {
         <Route
           path="/products/:id"
           element={
-            <ProductDetails />
+            <ProductDetails products={products} />
           }
         />
         <Route
