@@ -5,8 +5,8 @@
   height: 80vh;
   font-family: 'Optima';
   display: flex;
-  align-items: center;
   justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
 }
 
