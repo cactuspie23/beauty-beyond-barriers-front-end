@@ -61,7 +61,8 @@
   gap: 5%;
 }
 
-#sort_by
+#sort_by1
+,#sort_by2
 , .sort{
   position: absolute;
   right: 5vw;
