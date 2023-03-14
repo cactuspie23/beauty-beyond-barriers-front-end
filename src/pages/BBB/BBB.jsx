@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Product from '../../components/Product/Product'
 
 
-const BBB = ({ products }) => {
+const BBB = ({ products, windowWidth }) => {
   return (
     <main className={styles.container}>
       {/* {console.log(products[0].name)} */}
@@ -38,9 +38,11 @@ const BBB = ({ products }) => {
                 </div>
               </div>
             </div>
-            <Link to="/tutorials">
-              <button id={styles.tutorials_btn}>WATCH TUTORIALS</button>
-            </Link>
+            <div>
+              <Link to="/tutorials">
+                <button id={styles.tutorials_btn}>WATCH TUTORIALS</button>
+              </Link>
+            </div>
           </div>
         </div>
         <div id={styles.introduction}>
@@ -53,9 +55,16 @@ const BBB = ({ products }) => {
         <div>Makeup</div>
         <div className={styles.filter}>
           <div>FILTER BY</div>
-          <div>COLLECTION</div>
-          <div>FINISH</div>
-          <div>COLOR FAMILY</div>
+          {windowWidth >= 768 ?
+            <>
+              <div>COLLECTION</div>
+              <div>FINISH</div>
+              <div>COLOR FAMILY</div>
+            </>
+            :
+            null
+          }
+          <div className={styles.sort}>Sort By</div>
         </div>
         <div className={styles.products}>
           {products.map((product, idx) => (
@@ -97,7 +106,7 @@ const BBB = ({ products }) => {
           </div>
         </div>
         <div className={styles.products}>
-        {products.map((product, idx) => (
+          {products.map((product, idx) => (
             (product.category === "Skincare") ? <Product product={product} key={idx} /> : null
           ))}
         </div>

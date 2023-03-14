@@ -1,16 +1,20 @@
-.container{
+.container {
   margin: 2% 0;
   text-align: left;
-  width: 20vw;
+  width: 25vw;
   height: 80vh;
   font-family: 'Optima';
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 a:hover {
   text-decoration: none;
 }
 
-#title{
+#title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -18,36 +22,87 @@ a:hover {
   margin: 0.8rem 0;
 }
 
-#product_img{
-  width:20vw;
+#product_img {
+  width: 100%;
   margin-bottom: 10%;
-  box-shadow: 1px 1px 1px 2px rgba(0,0,0,.3);
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .3);
 }
 
-#accessibility_icon{
+#accessibility_icon {
   width: 15px;
 }
 
-#name{
+#name {
   font-size: 1.5em;
   font-weight: 500;
 }
 
-#description, #review{
+#description,
+#review {
   font-size: 1em;
   margin: 0.6rem 0;
 }
 
-#review{
+#review {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 5%;
 }
 
-#price{
+#price {
   font-size: 1em;
   font-weight: 600;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+    height: auto;
+    align-items: flex-start;
+    margin-bottom: 5%;
+    padding: 3%;
+  }
 
+  #stars {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #title {
+    margin: 0;
+  }
+
+  #product_img {
+    width: 100%;
+    margin-bottom: 3%;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .3);
+  }
+
+  #accessibility_icon {
+    width: 15px;
+  }
+
+  #name {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  #description,
+  #review {
+    font-size: 1em;
+    margin: 0.6rem 0;
+  }
+
+  #review {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+  }
+
+  #price {
+    font-size: 1em;
+    font-weight: 600;
+  }
+}

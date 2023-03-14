@@ -58,10 +58,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10%;
+  gap: 5%;
 }
 
-#sort_by{
+#sort_by
+, .sort{
   position: absolute;
   right: 5vw;
 }
@@ -153,3 +154,61 @@
   text-align: justify;
 }
 
+@media only screen and (max-width: 768px) {
+  .section > div:first-child{
+    font-size: 20px;
+    border: none;
+  }
+
+  .icon {
+    margin: 15% 0;
+  }
+  
+  .icon > div{
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  .icon img{
+    width: 30px;
+  }
+  
+  #title {
+    text-align: center;
+  }
+  
+  #title div:first-child {
+    font-size: 0.5em;
+  }
+  
+  #title div:nth-child(2) {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0.3em 0;
+  }
+  
+  #title div:nth-child(3) {
+    font-size: 0.7em;
+    font-weight: 500;
+    font-family: 'AkzidenzGrotesk';
+  }
+  
+  #info_section {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+  }
+
+  #tutorials_btn{
+    width: 80vw;
+  }
+  
+  #people_img {
+    max-width: 100vw;
+  }
+  
+  #title_section {
+    flex-direction: column;
+  }
+}
