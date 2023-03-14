@@ -135,35 +135,35 @@
 
 @media only screen and (max-width: 768px) {
   .top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    width: 100vw;
+    align-items: flex-start;
+    flex-direction: column;
   }
   
   .left {
-    width: 20%;
-    margin: 2rem;
+    width: 40%;
+    margin: 1rem;
   }
   
   .left > h1 {
-    font-family: 'Optima';
-    font-weight: 400;
-    font-size: 60px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    margin-left: 5%;
+    position: absolute;
+    left: 0;
+    top: 4em;
+    width: 35%;
   }
   
-  .left > h3 {
-    font-family: 'AkzidenzGrotesk';
-    font-weight: 400;
+  .top > h3 {
     font-size: 20px;
-    line-height: 128%;
+    position: relative;
+    font-weight: 400;
+    margin: 5%;
   }
   
   .right {
-    max-width: 60%;
-    max-height: 60%;
-    margin: 1.8rem;
+    margin: 0;
+    max-width: 100vw;
   }
   
   .mission {
@@ -171,101 +171,69 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1.3rem;
+    text-align-last: center;
+    margin: 2rem;
   }
   
   .mission > h2 {
-    font-family: 'Roboto';
-    font-weight: 700;
-  
+    font-size: 1.4em;
   }
   
   .mission > p {
-    font-family: 'Optima';
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
-    width: 60%;
-    line-height: 170%;
-    text-align: center;
-  }
-  
-  .accessibility {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: rgba(170, 170, 170, 0.08);
-    height: 24rem;
+    width: 100%;
+    text-align: justify;
+    text-align-last: left;
   }
   
   .accessibility > h2 {
-    font-family: 'Optima';
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 1.8rem;
+    font-size:3rem;
   }
   
   .icons {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    flex-wrap: wrap;
   }
   
   .icons > div {
-    margin: 1.2rem 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 1rem 0.5rem;
   }
-  
-  .icons > div> p {
-    font-family: 'AkzidenzGrotesk';
-    font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 1.3rem;
+
+  .icons > div > img{
+    width: 80%;
   }
-  
+
   .example {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto';
-    margin: 2.8rem;
-    padding: 1rem;
+    margin: 5rem 0;
+    padding: 0;
+    font-size: larger;
   }
   
   .example > h2 {
-    max-width: 55%;
+    max-width: 100%;
     text-align: center;
+    line-height: 3em;
   }
   
-  .makeup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'AkzidenzGrotesk';
+  .makeup p{
+    font-weight: 600;
+    margin: 35% 0;
   }
   
   .bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 8rem;
-    border: 1px solid #D8D8D8;
-    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2em;
+    filter: none;
   }
   
   .bottom img {
-    margin: 6rem;
+    margin: 0;
   }
   
   .bottom p {
-    font-family: 'Optima';
-    font-weight: 400;
     font-size: 22px;
-    padding: 2rem;
-    line-height: 178%;
+    padding: 0;
+    text-align: justify;
   }
 }
