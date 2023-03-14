@@ -98,7 +98,7 @@ button {
 }
 
 #title {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Optima', sans-serif;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -118,12 +118,19 @@ button {
 #title div:nth-child(2) {
   font-size: 2em;
   font-weight: 600;
-  margin: 0.5em 0;
+  margin-top: 1em;
 }
 
 #title div:nth-child(3) {
   font-size: 1.5em;
   font-weight: 500;
+  margin: 0.5em 0;
+}
+
+#title div:nth-child(4) {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1em;
 }
 
 
@@ -160,7 +167,6 @@ ol#kits li:hover{
   max-width: 45vw;
 }
 
-
 #title_section {
   display: flex;
   justify-content: space-between;
@@ -175,4 +181,25 @@ ol#kits li:hover{
   list-style: none;
 }
 
+@media screen and (max-width: 740px) {
+  #title_section {
+    flex-direction: column;
+  }
 
+  #title_section img {
+    max-width: 85%;
+    height: auto;
+  }
+
+  #info_section {
+    width: 100vw;
+  }
+
+  ol#kits li {
+    list-style-position: inside;
+  }
+
+  #title {
+    text-align: center;
+  }
+}

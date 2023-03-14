@@ -13,11 +13,10 @@ const Kits = () => {
               <div>ONLINE EXCLUSIVE</div>
               <div>FREE FIVE PIECE GIFT</div>
               <div>Chosen for accessibility and ease of use. </div>
-              <br />
               <div>Yours with any $45 purchase, while supplies last.  </div>
               <br />
               <div id={styles.kits_desc}>
-                <div>The products in the kits are</div>
+                <div>The products in the kits are:</div>
                 <ol id={styles.kits}>
                   <li>
                     Easy to grip
