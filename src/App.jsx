@@ -122,7 +122,7 @@ const App = () => {
           }
         />
       </Routes>
-      <Footer />
+      <Footer windowWidth={windowWidth} />
     </>
   )
 }
