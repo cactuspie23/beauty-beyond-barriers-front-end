@@ -27,7 +27,7 @@ a:hover, li:hover {
 }
 
 .left img {
-  margin-left: 0.8rem;
+  max-width: 18rem;
 }
 
 .right {
@@ -74,5 +74,9 @@ a:hover, li:hover {
     padding: 0.5rem;
     max-width: 2.5rem;
     border: none;
+  }
+
+  .left img {
+    max-width: 13rem;
   }
 }
