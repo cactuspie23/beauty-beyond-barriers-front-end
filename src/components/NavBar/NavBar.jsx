@@ -4,7 +4,7 @@ import styles from './NavBar.module.css'
 import DropdownMenu from '../DropdownMenu/DropdownMenu'
 
 const NavBar = ({ user, handleLogout, windowWidth }) => {
-  const [dropdown, setDropdown] = useState(false)
+  const [dropdown, setDropdown] = useState(true)
 
   return (
     <nav>
