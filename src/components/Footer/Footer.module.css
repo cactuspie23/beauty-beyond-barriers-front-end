@@ -74,9 +74,12 @@ input[type="tel"]::placeholder, input[type="email"]::placeholder {
   width: 7rem;
 }
 
+.b, .h {
+  width: 100%;
+}
+
 .h div {
   border-bottom: 1px solid;
-  width: 100vw;
   padding: 0.8rem;
   padding-left: 1rem;
   font-size: 1.3em;
@@ -86,7 +89,6 @@ input[type="tel"]::placeholder, input[type="email"]::placeholder {
 .b div {
   color: #a4a8f5;
   background-color: #04071c;
-  width: 100vw;
   text-align: center;
   line-height: 1.6rem;
 }
