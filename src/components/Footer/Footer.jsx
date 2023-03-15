@@ -1,49 +1,59 @@
 import styles from './Footer.module.css'
 
-const Footer = ({ user }) => {
+const Footer = ({ windowWidth }) => {
   return (
     <div id={styles.container}>
-      <div className={styles.large_sec}>
-        <div className={styles.section}>
-          <div>
-            <h1>About Estée Lauder</h1>
-            <div>Estée Lauder, Our Founder</div>
-            <div>Careers</div>
-            <div>Corporate Info</div>
-          </div>
-          <div>
-            <h1>Find Us</h1>
-            <div>Store Locator</div>
-            <img src='../../images/social_media.png' alt='social media' />
-          </div>
+      {windowWidth >= 768 ?
+        <div className={styles.large_sec}>
+          <div className={styles.section}>
+            <div>
+              <h1>About Estée Lauder</h1>
+              <div>Estée Lauder, Our Founder</div>
+              <div>Careers</div>
+              <div>Corporate Info</div>
+            </div>
+            <div>
+              <h1>Find Us</h1>
+              <div>Store Locator</div>
+              <img src='../../images/social_media.png' alt='social media' />
+            </div>
 
-        </div>
-        <div className={styles.section}>
-          <div>
-            <h1>Need Help?</h1>
-            <div>Track My Order</div>
-            <div>Beauty Chat</div>
-            <div>Live Chat</div>
-            <div>1.877.311.3883</div>
           </div>
+          <div className={styles.section}>
+            <div>
+              <h1>Need Help?</h1>
+              <div>Track My Order</div>
+              <div>Beauty Chat</div>
+              <div>Live Chat</div>
+              <div>1.877.311.3883</div>
+            </div>
 
+          </div>
+          <div className={styles.section}>
+            <h1>Custom Care</h1>
+            <div>Returns & Exchanges</div>
+            <div>FAQs</div>
+            <div>Shipping Information</div>
+            <div>Afterpay</div>
+            <div>More</div>
+          </div>
+          <div className={styles.section}>
+            <h1>Privacy & Terms</h1>
+            <div>Privacy Policy <span>(NEW)</span></div>
+            <div>Do Not Sell or Share My Personal Information / Targeted Ads</div>
+            <div>Terms & Conditions</div>
+            <div>Accessibility</div>
+          </div>
         </div>
-        <div className={styles.section}>
-          <h1>Custom Care</h1>
-          <div>Returns & Exchanges</div>
-          <div>FAQs</div>
-          <div>Shipping Information</div>
-          <div>Afterpay</div>
-          <div>More</div>
+
+      :
+        <div className={styles.h}>
+          <div>Track My Order</div>
+          <div>Customer Care</div>
+          <div>Sign In/My Account</div>
+          <div>Careers</div>
         </div>
-        <div className={styles.section}>
-          <h1>Privacy & Terms</h1>
-          <div>Privacy Policy <span>(NEW)</span></div>
-          <div>Do Not Sell or Share My Personal Information / Targeted Ads</div>
-          <div>Terms & Conditions</div>
-          <div>Accessibility</div>
-        </div>
-      </div>
+      }
 
       <div className={styles.large_sec} id={styles.second_large_sec}>
         <div className={styles.sign_up}>
@@ -69,6 +79,20 @@ const Footer = ({ user }) => {
           </div>
         </div>
       </div>
+      {windowWidth >= 768 ? 
+      ""
+      : 
+      <div className={styles.b}>
+        <img src='../../images/social_media.png' alt='social media' />
+        <div>Supplier Relations</div>
+        <div>Privacy Policy</div>
+        <div>Do Not Sell or Share</div>
+        <div>My Personal Information / Targeted Ads</div>
+        <div>Terms & Conditions</div>
+        <div>Estee E-List Terms & Conditions</div>
+        
+      </div>
+      }
     </div>
   )
 }

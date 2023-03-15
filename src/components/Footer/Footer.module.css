@@ -74,6 +74,28 @@ input[type="tel"]::placeholder, input[type="email"]::placeholder {
   width: 7rem;
 }
 
+.h div {
+  border-bottom: 1px solid;
+  width: 100vw;
+  padding: 0.8rem;
+  padding-left: 1rem;
+  font-size: 1.3em;
+  color: #a0aff9;
+}
+
+.b div {
+  color: #a4a8f5;
+  background-color: #04071c;
+  width: 100vw;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+.b img {
+  display: block;
+  margin: 1rem auto;
+}
+
 #container{
   background-color: #050b29;
   color: white;
@@ -90,4 +112,12 @@ input[type="tel"]::placeholder, input[type="email"]::placeholder {
   align-items: flex-start;
 }
 
+@media screen and (max-width: 760px) {
+  #second_large_sec{
+    flex-direction: column;
+  }
 
+  .sign_up {
+    width: 90%;
+  }
+}
