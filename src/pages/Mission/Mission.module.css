@@ -110,6 +110,15 @@
   align-items: center;
   justify-content: center;
   font-family: 'AkzidenzGrotesk';
+  padding: 1.2rem;
+}
+
+.makeup div {
+  padding: 1rem;
+}
+
+.makeup img {
+  max-width: 25%;
 }
 
 .bottom {
@@ -192,10 +201,6 @@
     font-size:2rem;
   }
   
-  .icons {
-    flex-wrap: wrap;
-  }
-  
   .icons > div {
     margin: 1rem 0.5rem;
   }
@@ -218,7 +223,11 @@
   
   .makeup p{
     font-weight: 600;
-    margin: 35% 0;
+    margin: 35% 5%;
+  }
+
+  .makeup img {
+    max-width: 70%;
   }
   
   .bottom {
@@ -230,6 +239,7 @@
   
   .bottom img {
     margin: 0;
+    max-width: 100%;
   }
   
   .bottom p {

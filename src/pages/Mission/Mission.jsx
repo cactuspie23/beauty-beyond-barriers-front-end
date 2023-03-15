@@ -67,9 +67,9 @@ const Mission = ({ windowWidth }) => {
                 <p>Double-sided applicator</p>
                 <p>Square, matte handle is easy to grip</p>
               </div>
-              <div>
+
                 <img src='/images/Mission/My project-1.png' alt='lipstick' />
-              </div>
+
               <div>
                 <p>Square container won't roll off the table</p>
               </div>
