@@ -5,7 +5,7 @@ import * as productService from "../../services/productService"
 import Switch from "react-switch";
 import Product from '../../components/Product/Product';
 
-const ProductDetails = ({ products }) => {
+const ProductDetails = ({ products, windowWidth }) => {
   const {id} = useParams()
   const [product, setProduct] = useState(null)
   const [showMore, setShowMore] = useState(false)
@@ -31,6 +31,96 @@ const ProductDetails = ({ products }) => {
       <div id={styles.section1}>
         <div id={styles.product_descr}>
           <img src={product.imgUrl} alt={product.name} />
+          {windowWidth >= 768 ?
+          ''
+          :
+
+          <div id={styles.product_info}>
+            <h1>{product.name}</h1>
+            <div id={styles.stars}>
+              <img src='../images/star.png' alt='star' />
+              <img src='../images/star.png' alt='star' />
+              <img src='../images/star.png' alt='star' />
+              <img src='../images/star.png' alt='star' />
+              <div></div>
+            </div>
+            <div>{product.shortDescription}</div>
+            <div id={styles.icons}>
+              <div className={styles.icons_col}>
+                <div className={styles.icon}>
+                  <img src="../images/universal-icon.png" alt='accessible-icons' />
+                  <div>Accessible</div>
+                </div>
+                <div className={styles.icon}>
+                  <img src="../images/grip-friendly.png" alt='accessible-icons' />
+                  <div>Grip-Friendly</div>
+                </div>
+              </div>
+              <div className={styles.icons_col}>
+                <div className={styles.icon}>
+                  <img src="../images/highly-pigmented.png" alt='accessible-icons' />
+                  <div>Highly Pigmented</div>
+                </div>
+                <div className={styles.icon}>
+                  <img src="../images/easy-applicator.png" alt='accessible-icons' />
+                  <div>Easy Applicator</div>
+                </div>
+              </div>
+            </div>
+            <div id={styles.colors}>
+              <ul>
+                <li>ALL</li>
+                <li>NUDE</li>
+                <li>PINK</li>
+                <li>CORAL</li>
+                <li>RED</li>
+                <li>MAUVE</li>
+              </ul>
+              <img src='../../images/color.png' alt="color" />
+              <select>
+                <option>333 PERSUASIVE</option>
+                <option>420 REBELLIOUS ROSE</option>
+                <option>420 REBELLIOUS ROSE</option>
+                <option>320 DEFIANT CORAL</option>
+              </select>
+            </div>
+            <div>{product.size}  <b>${product.price}.00</b></div>
+            <div id={styles.subscribe}>
+              <b>AUTO SUBSCRIBE</b>
+              <Switch onChange={handleChange} checked={isChecked} />
+            </div>
+            <div>E-Listener earn 15 points for each subscription order!</div>
+            <div id={styles.qty_sec}>
+              <div><b>QTY</b></div>
+              <div id={styles.qty}>
+                <button>-</button>
+                <div>1</div>
+                <button>+</button>
+              </div>
+              <button id={styles.add}>ADD TO BAG</button>
+            </div>
+            <div>
+              <div><b>FREE STANDARD SHIPPING & RETURNS</b></div>
+              <img src='../../images/ProductDetails/logo-afterpay-colour.png' alt="afterpay" />
+              <span>Shop now and pay later with 4 payments of $9.00</span>
+              <div>SHARE</div>
+            </div>
+            <div>
+              <div><b>BENEFITS</b></div>
+              <div>Striking, longwear color in dimensional Creme finish.</div>
+            </div>
+            <div>
+              <div><b>COVERAGE</b></div>
+              <div>Medium to Full Coverage</div>
+            </div>
+            <div>
+              <div><b>Finish</b></div>
+              <div>Long lasting lipstick in Creme finish</div>
+            </div>
+          </div>
+          }
+
+
           <div id={styles.product_info}>
             <div className={styles.dropdown}>
               <div className={styles.dropdown_title}>
@@ -86,90 +176,95 @@ const ProductDetails = ({ products }) => {
             </div>
           </div>
         </div>
-        <div id={styles.product_info}>
-          <h1>{product.name}</h1>
-          <div>
-            <img src='../images/star.png' alt='star' />
-            <img src='../images/star.png' alt='star' />
-            <img src='../images/star.png' alt='star' />
-            <img src='../images/star.png' alt='star' />
-            <div>Read Reviews</div>
-          </div>
-          <div>{product.shortDescription}</div>
-          <div id={styles.icons}>
-            <div className={styles.icons_col}>
-              <div className={styles.icon}>
-                <img src="../images/universal-icon.png" alt='accessible-icons' />
-                <div>Accessible</div>
+        {windowWidth >= 768 ?
+          <div id={styles.product_info}>
+            <h1>{product.name}</h1>
+            <div>
+              <img src='../images/star.png' alt='star' />
+              <img src='../images/star.png' alt='star' />
+              <img src='../images/star.png' alt='star' />
+              <img src='../images/star.png' alt='star' />
+              <div>Read Reviews</div>
+            </div>
+            <div>{product.shortDescription}</div>
+            <div id={styles.icons}>
+              <div className={styles.icons_col}>
+                <div className={styles.icon}>
+                  <img src="../images/universal-icon.png" alt='accessible-icons' />
+                  <div>Accessible</div>
+                </div>
+                <div className={styles.icon}>
+                  <img src="../images/grip-friendly.png" alt='accessible-icons' />
+                  <div>Grip-Friendly</div>
+                </div>
               </div>
-              <div className={styles.icon}>
-                <img src="../images/grip-friendly.png" alt='accessible-icons' />
-                <div>Grip-Friendly</div>
+              <div className={styles.icons_col}>
+                <div className={styles.icon}>
+                  <img src="../images/highly-pigmented.png" alt='accessible-icons' />
+                  <div>Highly Pigmented</div>
+                </div>
+                <div className={styles.icon}>
+                  <img src="../images/easy-applicator.png" alt='accessible-icons' />
+                  <div>Easy Applicator</div>
+                </div>
               </div>
             </div>
-            <div className={styles.icons_col}>
-              <div className={styles.icon}>
-                <img src="../images/highly-pigmented.png" alt='accessible-icons' />
-                <div>Highly Pigmented</div>
+            <div id={styles.colors}>
+              <ul>
+                <li>ALL</li>
+                <li>NUDE</li>
+                <li>PINK</li>
+                <li>CORAL</li>
+                <li>RED</li>
+                <li>MAUVE</li>
+              </ul>
+              <img src='../../images/color.png' alt="color" />
+              <select>
+                <option>333 PERSUASIVE</option>
+                <option>420 REBELLIOUS ROSE</option>
+                <option>420 REBELLIOUS ROSE</option>
+                <option>320 DEFIANT CORAL</option>
+              </select>
+            </div>
+            <div>{product.size}  <b>${product.price}.00</b></div>
+            <div id={styles.subscribe}>
+              <b>AUTO SUBSCRIBE</b>
+              <Switch onChange={handleChange} checked={isChecked} />
+            </div>
+            <div>E-Listener earn 15 points for each subscription order!</div>
+            <div id={styles.qty_sec}>
+              <div><b>QTY</b></div>
+              <div id={styles.qty}>
+                <button>-</button>
+                <div>1</div>
+                <button>+</button>
               </div>
-              <div className={styles.icon}>
-                <img src="../images/easy-applicator.png" alt='accessible-icons' />
-                <div>Easy Applicator</div>
-              </div>
+              <button id={styles.add}>ADD TO BAG</button>
+            </div>
+            <div>
+              <div><b>FREE STANDARD SHIPPING & RETURNS</b></div>
+              <img src='../../images/ProductDetails/logo-afterpay-colour.png' alt="afterpay" />
+              <span>Shop now and pay later with 4 payments of $9.00</span>
+              <div>SHARE</div>
+            </div>
+            <div>
+              <div><b>BENEFITS</b></div>
+              <div>Striking, longwear color in dimensional Creme finish.</div>
+            </div>
+            <div>
+              <div><b>COVERAGE</b></div>
+              <div>Medium to Full Coverage</div>
+            </div>
+            <div>
+              <div><b>Finish</b></div>
+              <div>Long lasting lipstick in Creme finish</div>
             </div>
           </div>
-          <div id={styles.colors}>
-            <ul>
-              <li>ALL</li>
-              <li>NUDE</li>
-              <li>PINK</li>
-              <li>CORAL</li>
-              <li>RED</li>
-              <li>MAUVE</li>
-            </ul>
-            <img src='../../images/color.png' alt="color" />
-            <select>
-              <option>333 PERSUASIVE</option>
-              <option>420 REBELLIOUS ROSE</option>
-              <option>420 REBELLIOUS ROSE</option>
-              <option>320 DEFIANT CORAL</option>
-            </select>
-          </div>
-          <div>{product.size}  <b>${product.price}.00</b></div>
-          <div id={styles.subscribe}>
-            <b>AUTO SUBSCRIBE</b>
-            <Switch onChange={handleChange} checked={isChecked} />
-          </div>
-          <div>E-Listener earn 15 points for each subscription order!</div>
-          <div id={styles.qty_sec}>
-            <div><b>QTY</b></div>
-            <div id={styles.qty}>
-              <button>-</button>
-              <div>1</div>
-              <button>+</button>
-            </div>
-            <button id={styles.add}>ADD TO BAG</button>
-          </div>
-          <div>
-            <div><b>FREE STANDARD SHIPPING & RETURNS</b></div>
-            <img src='../../images/ProductDetails/logo-afterpay-colour.png' alt="afterpay" />
-            <span>Shop now and pay later with 4 payments of $9.00</span>
-            <div>SHARE</div>
-          </div>
-          <div>
-            <div><b>BENEFITS</b></div>
-            <div>Striking, longwear color in dimensional Creme finish.</div>
-          </div>
-          <div>
-            <div><b>COVERAGE</b></div>
-            <div>Medium to Full Coverage</div>
-          </div>
-          <div>
-            <div><b>Finish</b></div>
-            <div>Long lasting lipstick in Creme finish</div>
-          </div>
-        </div>
+        : 
+          ''
+        }
       </div>
+
       <div id={styles.others}>
         {products.slice(0,3).map((product, i) => (
           <Product product={product} key={i} />
