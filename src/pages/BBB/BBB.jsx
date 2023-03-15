@@ -64,7 +64,12 @@ const BBB = ({ products, windowWidth }) => {
             :
             null
           }
-          <div className={styles.sort}>Sort By</div>
+          <div className={styles.option} id={styles.sort_by1}>
+            <div>
+              SORT BY
+            </div>
+            <img src="../../images/sort-down.png" alt="short-down-icon" />
+          </div>
         </div>
         <div className={styles.products}>
           {products.map((product, idx) => (
@@ -76,29 +81,35 @@ const BBB = ({ products, windowWidth }) => {
         <div>Skincare</div>
         <div className={styles.filter}>
           <div>FILTER BY</div>
-          <div className={styles.option}>
-            <div>
-              CATEGORY
-            </div>
-            <img src="../../images/sort-down.png" alt="short-down-icon" />
-          </div>
-          <div className={styles.option}>
-            <div>COLLECTION</div>
-            <img src="../../images/sort-down.png" alt="short-down-icon" />
-          </div>
-          <div className={styles.option}>
-            <div>
-              SKIN TYPE
-            </div>
-            <img src="../../images/sort-down.png" alt="short-down-icon" />
-          </div>
-          <div className={styles.option}>
-            <div>
-              SKIN CONCERNS
-            </div>
-            <img src="../../images/sort-down.png" alt="short-down-icon" />
-          </div>
-          <div className={styles.option} id={styles.sort_by}>
+          {windowWidth >= 768 ?
+            <>
+              <div className={styles.option}>
+                <div>
+                  CATEGORY
+                </div>
+                <img src="../../images/sort-down.png" alt="short-down-icon" />
+              </div>
+              <div className={styles.option}>
+                <div>COLLECTION</div>
+                <img src="../../images/sort-down.png" alt="short-down-icon" />
+              </div>
+              <div className={styles.option}>
+                <div>
+                  SKIN TYPE
+                </div>
+                <img src="../../images/sort-down.png" alt="short-down-icon" />
+              </div>
+              <div className={styles.option}>
+                <div>
+                  SKIN CONCERNS
+                </div>
+                <img src="../../images/sort-down.png" alt="short-down-icon" />
+              </div>
+            </>
+            :
+            null
+          }
+          <div className={styles.option} id={styles.sort_by2}>
             <div>
               SORT BY
             </div>
