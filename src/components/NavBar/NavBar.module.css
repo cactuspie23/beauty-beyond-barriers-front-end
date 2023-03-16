@@ -58,7 +58,7 @@ li:hover {
   background-color: #040a2b;
   width: 100%;
   height: 1.8rem;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
 
 .middle {
@@ -110,6 +110,10 @@ li:hover {
   height: 6vh;
 }
 
+.links li:hover{
+  cursor: pointer;
+}
+
 #dropdown_container {
   position: absolute;
   left: 0;
@@ -125,7 +129,7 @@ li:hover {
 }
 
 @media (max-width: 768px) {
-  ul {
+  .links {
     padding-left: 2%;
     position: absolute;
     display: flex;
@@ -134,7 +138,7 @@ li:hover {
     flex-direction: column;
     font-size: 100%;
     z-index: 5;
-    top: 5.1rem;
+    top: 4.4rem;
     left: 0;
     /* width: 100%; */
     width: 500px;
@@ -148,7 +152,7 @@ li:hover {
 
 
 
-  ul li {
+  .links li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,7 +165,7 @@ li:hover {
     font-size: large;
   }
 
-  ul li:hover {
+  .links li:hover {
     cursor: pointer;
   }
 

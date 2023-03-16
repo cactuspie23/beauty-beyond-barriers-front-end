@@ -14,8 +14,10 @@
   width: 500px;
   height: 80vh;
   padding-left:2%;
-  /* background-color: orange; */
-  border-bottom: 0.1px grey solid;
+  background-color: white;
+  border-right: 0.1px grey solid;
+  /* border-top: 0.1px solid grey; */
+  border-bottom: 0.1px solid grey;
 }
 
 .mobileDropdown a{
