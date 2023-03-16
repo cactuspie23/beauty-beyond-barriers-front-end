@@ -43,6 +43,17 @@ li:hover {
   flex-direction: row;
 }
 
+.mobileNavigation > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+}
+
+.mobileNavigation a img{
+  width: 30vw;
+}
+
 .line {
   background-color: #040a2b;
   width: 100%;
