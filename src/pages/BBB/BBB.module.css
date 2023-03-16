@@ -38,7 +38,7 @@
   align-items: center;
   gap: 10px;
   margin: 2%;
-  padding: 2% 5%;
+  padding: 1rem;
 }
 
 .icon > div{
@@ -58,7 +58,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5%;
+  /* gap: 5%; */
 }
 
 #sort_by1
@@ -157,7 +157,7 @@
 
 @media only screen and (max-width: 768px) {
   .section > div:first-child{
-    font-size: 20px;
+    font-size: 35px;
     border: none;
   }
 

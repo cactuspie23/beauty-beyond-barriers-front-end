@@ -164,3 +164,40 @@
   align-items: center;
   font-weight: 400;
 }
+
+@media screen and (max-width: 768px) {
+  #section1 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #product_info{
+    width: 85%;
+    margin: 0;
+  }
+
+  #product_descr {
+    width: 100%;
+  }
+  
+  #product_descr img{
+    width: 100%;
+  }
+  
+  #stars {
+    display: flex;
+    max-width: max-content;
+    height: auto;
+  }
+  #icons {
+    width: 100%;
+    margin: 0;
+    border: 1px solid;
+  }
+
+  #others{
+    flex-direction: column;
+    gap: 5%;
+    margin: 2.8rem 0;
+  }
+}
