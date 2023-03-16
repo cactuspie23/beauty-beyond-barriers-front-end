@@ -110,6 +110,10 @@ li:hover {
   height: 6vh;
 }
 
+.links li:hover{
+  cursor: pointer;
+}
+
 #dropdown_container {
   position: absolute;
   left: 0;
