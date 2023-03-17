@@ -77,7 +77,7 @@
 }
 
 #colors img {
-  width: 28vw;
+  width: 150px;
 }
 
 #product_info {
@@ -204,5 +204,9 @@
 
   #afterpay img{
     width: 100px;
+  }
+
+  #colors #color{
+    width: 150px;
   }
 }

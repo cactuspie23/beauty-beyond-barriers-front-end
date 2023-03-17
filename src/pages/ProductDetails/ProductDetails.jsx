@@ -75,7 +75,7 @@ const ProductDetails = ({ products, windowWidth }) => {
                 <li>RED</li>
                 <li>MAUVE</li>
               </ul>
-              <img src='../../images/color.png' alt="color" />
+              <img src='../../images/ProductDetails/color.png' alt="color" id={styles.color} />
               <select>
                 <option>333 PERSUASIVE</option>
                 <option>420 REBELLIOUS ROSE</option>
@@ -199,7 +199,7 @@ const ProductDetails = ({ products, windowWidth }) => {
                 <li>RED</li>
                 <li>MAUVE</li>
               </ul>
-              <img src='../../images/color.png' alt="color" />
+              <img src='../../images/ProductDetails/color.png' alt="color" />
               <select>
                 <option>333 PERSUASIVE</option>
                 <option>420 REBELLIOUS ROSE</option>
@@ -224,7 +224,7 @@ const ProductDetails = ({ products, windowWidth }) => {
             </div>
             <div>
               <div><b>FREE STANDARD SHIPPING & RETURNS</b></div>
-              <img src='../../images/ProductDetails/logo-afterpay-colour.png' alt="afterpay" />
+              <img src='../../images/ProductDetails/logo-afterpay-colour.png' alt="afterpay" id={styles.color} />
               <span>Shop now and pay later with 4 payments of $9.00</span>
               <div>SHARE</div>
             </div>
