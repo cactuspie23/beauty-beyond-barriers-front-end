@@ -91,14 +91,29 @@
   .sec {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 3rem 0;
   }
 
   .image {
     margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .image, .text {
+  .text{
+    display: flex;
+  }
+
+  .image, 
+  .text {
     width: 100%;
+    justify-content: center;
+  }
+
+  .container .sec:nth-child(odd) .text {
+    order: 2;
   }
 }
