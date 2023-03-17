@@ -98,9 +98,9 @@ const ProductDetails = ({ products, windowWidth }) => {
               </div>
               <button id={styles.add}>ADD TO BAG</button>
             </div>
-            <div>
+            <div id={styles.afterpay}>
               <div><b>FREE STANDARD SHIPPING & RETURNS</b></div>
-              <img src='../../images/ProductDetails/logo-afterpay-colour.png' alt="afterpay" />
+              <img src='../../images/ProductDetails/logo-afterpay-colour.png' alt="afterpay"  />
               <span>Shop now and pay later with 4 payments of $9.00</span>
               <div>SHARE</div>
             </div>
