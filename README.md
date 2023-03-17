@@ -1,8 +1,10 @@
 # <center>BEAUTY BEYOND BARRIERS</center>
 
-Beauty Beyond Barriers was created during a hackathon project for Estee Lauder Accessible Beauty Hackathon. This project aims to create accessible and inclusive technology solutions for those shopping for and using beauty products. 
+Beauty Beyond Barriers was created during a hackathon project for Estee Lauder Accessible Beauty Hackathon. This project aims to create accessible and inclusive technology solutions for those shopping for and using beauty products.  
 
-### Launch the site [here](https://beautybeyondbarriers.netlify.app) and [Backend Repo](https://github.com/cactuspie23/beauty-beyond-barriers-back-end)
+> **Note:** This website is not fully functional. It is intended only for demonstration purposes.
+
+### Launch the site [**here**](https://beautybeyondbarriers.netlify.app) and back-end repo [**here**](https://github.com/cactuspie23/beauty-beyond-barriers-back-end)
 
 ## Landing Page
 
