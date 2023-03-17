@@ -13,13 +13,15 @@ const Signin = props => {
   return (
     <main className={styles.container}>
       <div className={styles.card_container}>
-        <div className={styles.btns_container}>
-          <button onClick={() => toggleSelect(true)} autoFocus style={{"outline":"none"}}>SIGN IN</button>
-          <button onClick={() => toggleSelect(false)}>CREATE ACCOUNT</button>
+        <div className={styles.heads_container}>
+          <div>
+            <div onClick={() => toggleSelect(true)} className={selectSignin?styles.focus:null}>SIGN IN</div>
+            <div onClick={() => toggleSelect(false)} className={selectSignin?null:styles.focus}>CREATE ACCOUNT</div>
+          </div>
         </div>
         <div className={styles.form_container}>
           {selectSignin ?
-            <SigninForm handleSignupOrLogin={props.handleSignupOrLogin} />
+            <SigninForm handleSignupOrLogin={props.handleSignupOrLogin}  />
             :
             <SignupForm handleSignupOrLogin={props.handleSignupOrLogin} />
           }
