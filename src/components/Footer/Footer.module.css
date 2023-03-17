@@ -6,6 +6,7 @@ span{
 ,.sign_up{
   width: 25%;
   margin: 1%;
+  line-height: 1.8rem;
 }
 
 .large_sec{
@@ -42,12 +43,17 @@ span{
   color: white;
 }
 
+.inputs {
+  display: flex;
+  align-items: center;
+}
+
 input[type="tel"], input[type="email"] {
   background-color: #050b29;
   color: white;
   border: white 2px solid;
   height: 3em;
-  width: 10em;
+  width: 20rem;
 }
 
 input[type="tel"]::placeholder, input[type="email"]::placeholder {
@@ -65,7 +71,31 @@ input[type="tel"]::placeholder, input[type="email"]::placeholder {
   border: 1px solid #a4a8f5;
   margin: 2% 3%;
   height: 3em;
-  width: 5em;
+  width: 7rem;
+}
+
+.b, .h {
+  width: 100%;
+}
+
+.h div {
+  border-bottom: 1px solid;
+  padding: 0.8rem;
+  padding-left: 1rem;
+  font-size: 1.3em;
+  color: #a0aff9;
+}
+
+.b div {
+  color: #a4a8f5;
+  background-color: #04071c;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+.b img {
+  display: block;
+  margin: 1rem auto;
 }
 
 #container{
@@ -84,4 +114,12 @@ input[type="tel"]::placeholder, input[type="email"]::placeholder {
   align-items: flex-start;
 }
 
+@media screen and (max-width: 760px) {
+  #second_large_sec{
+    flex-direction: column;
+  }
 
+  .sign_up {
+    width: 90%;
+  }
+}

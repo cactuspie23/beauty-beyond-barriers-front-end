@@ -35,7 +35,7 @@
 }
 
 .head > h1 {
-  font-size: 3rem;
+  font-size: 2.8vw;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -44,6 +44,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 62%;
+  height: auto;
 }
 
 .desc {
@@ -64,12 +66,12 @@
 }
 
 .pics > img {
-  max-width: 45%;
+  max-width: 36%;
   height: auto;
-  padding: 0 0.5rem;
+  padding: 0 0.4rem;
 }
 
 .acc {
   align-self: flex-end;
-  margin-top: 4.2rem;
+  margin: 1.8rem 0;
 }

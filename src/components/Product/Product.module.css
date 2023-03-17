@@ -1,12 +1,12 @@
 .container {
-  margin: 2% 0;
+  margin: 2vw;
   text-align: left;
   width: 25vw;
-  height: 80vh;
+  height: 600px;
   font-family: 'Optima';
   display: flex;
-  align-items: center;
   justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
 }
 
