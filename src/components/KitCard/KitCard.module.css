@@ -1,7 +1,7 @@
 .container{
   margin: 2% 0;
   text-align: left;
-  max-width: 20vw;
+  max-width: 20rem;
   font-family: 'Optima';
 }
 
@@ -47,15 +47,15 @@
 
 @media screen and (max-width: 740px) {
   .container {
-    width: 100vw;
+    max-width: 30rem;
   }
 
   .container div {
-    width: 15rem;
+    width: 80%;
   }
 
   #kit_img{
-    width: 50vw;
+    width: 100%;
     margin-bottom: 10%;
   }
 }

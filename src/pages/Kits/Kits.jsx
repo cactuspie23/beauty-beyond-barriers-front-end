@@ -4,7 +4,7 @@ import { kitData } from '../../components/KitCard/KitsData.js'
 
 const Kits = () => {
   return (
-    <main className={styles.container}>
+    <main className={styles.kit_container}>
       <div id={styles.first_section} >
         <div id={styles.title_section}>
           <img src="../images/Kit/kit.png" alt="people" id={styles.people_img} />
