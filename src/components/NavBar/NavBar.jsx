@@ -1,7 +1,4 @@
-// import { Link } from 'react-router-dom'
-// import { useState } from 'react'
 import styles from './NavBar.module.css'
-// import DropdownMenu from '../DropdownMenu/DropdownMenu'
 import MobileNavBar from "./MobileNavBar"
 import Navigation from "./Navigation"
 

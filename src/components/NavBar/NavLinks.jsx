@@ -35,10 +35,8 @@ const NavBar = ({ user, handleLogout, closeMobileMenu, isMobile }) => {
             <li
               onClick={() => isMobile && openSecondLayer()}
             >
-              {/* <Link to="/bbb"> */}
               <div>BBB<img src="./images/Nav/LargerThan.png" alt="larger than" />
               </div>
-              {/* </Link> */}
             </li>
             <li onClick={() => isMobile && closeMobileMenu()}>FRAGRANCES<img src="./images/Nav/LargerThan.png" alt="larger than" /></li>
             <li onClick={() => isMobile && closeMobileMenu()}>SETS & GIFTS<img src="./images/Nav/LargerThan.png" alt="larger than" /></li>
@@ -67,9 +65,7 @@ const NavBar = ({ user, handleLogout, closeMobileMenu, isMobile }) => {
             onMouseEnter={() => setDropdown(true)}
             onMouseLeave={() => setDropdown(false)}
           >
-            {/* <Link to="/bbb"> */}
             BBB
-            {/* </Link> */}
             <div id={styles.dropdown_container}>
               {dropdown && <DropdownMenu />}
             </div>
