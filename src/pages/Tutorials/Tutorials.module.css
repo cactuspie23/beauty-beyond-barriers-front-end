@@ -23,8 +23,6 @@
 
 .text{
   width: 43vw;
-  /* padding: 0 2vw; */
-  /* margin-right: 2vw; */
   margin: 0 2vw;
   display: flex;
   justify-content: center;
@@ -64,7 +62,6 @@
 .product{
   font-size: 1.2em;
   gap: 1em;
-  /* padding: 0.5em 2em; */
   display: flex;
   justify-content: center;
   align-items: center;
