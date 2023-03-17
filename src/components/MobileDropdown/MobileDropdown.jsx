@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styles from './MobileDropdown.module.css'
-// import { useEffect } from "react";
 
 const MobileDropdown = ({dropdown, closeDropdown, closeMobileMenu}) => {
   return (

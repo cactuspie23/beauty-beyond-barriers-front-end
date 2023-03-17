@@ -1,6 +1,5 @@
 import NavLinks from "./NavLinks"
 import styles from './NavBar.module.css'
-// import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
@@ -27,7 +26,6 @@ const MobileNavBar = ({ user, handleLogout }) => {
         <div>
           {user ?
             <>
-              {/* <div>Welcome, {user.name}</div> */}
               <div><Link to="" onClick={handleLogout}>LOG OUT</Link></div>
             </>
             :

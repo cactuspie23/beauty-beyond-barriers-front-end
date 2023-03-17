@@ -1,15 +1,10 @@
 import styles from './Landing.module.css'
 import Banner from '../../components/Banner/Banner'
-// import { useEffect, useState } from 'react';
 
 const Landing = ({windowWidth}) => {
-
-
-
   return (
     <main className={styles.landingContainer}>
       <Banner />
-      {/* {console.log(window.innerWidth)} */}
       <div className={styles.bannerContent}>
         {
           windowWidth >= 768 ?

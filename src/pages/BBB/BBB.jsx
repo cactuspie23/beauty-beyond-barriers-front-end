@@ -6,7 +6,6 @@ import Product from '../../components/Product/Product'
 const BBB = ({ products, windowWidth }) => {
   return (
     <main className={styles.container}>
-      {/* {console.log(products[0].name)} */}
       <div id={styles.first_section} >
         <div id={styles.title_section}>
           <img src="../images/BBB/people.png" alt="people" id={styles.people_img} />

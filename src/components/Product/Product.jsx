@@ -5,7 +5,6 @@ const Product = ({ product }) => {
   return (
     <Link to={`/products/${product._id}`}>
       <main className={styles.container}>
-        {/* <div > */}
         <img src={product.imgUrl} alt='product' id={styles.product_img} />
         <div>
           <div id={styles.title}>
@@ -25,7 +24,6 @@ const Product = ({ product }) => {
           <div id={styles.description}>{product.shortDescription}</div>
           <div id={styles.price}>${product.price}.00</div>
         </div>
-        {/* </div> */}
       </main>
     </Link>
   )

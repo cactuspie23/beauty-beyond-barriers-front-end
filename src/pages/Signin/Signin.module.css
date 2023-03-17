@@ -14,7 +14,6 @@
   border: 2px rgb(218, 216, 216) solid;
   width: 40vw;
   max-width: 500px;
-  /* position: fixed; */
   top: 150px;
   padding-bottom: 40px;
 }
@@ -25,8 +24,6 @@
   align-items: center;
   width: 100%;
   height: 7vh;
-  /* border-bottom: 1px black solid; */
-
 }
 
 .heads_container>div {
@@ -36,8 +33,6 @@
   justify-content: center;
   align-items: center;
   border-bottom: rgb(218, 216, 216) solid 5px;
-  /* padding: 3% 0; */
-
 }
 
 .heads_container>div>div {
@@ -52,7 +47,6 @@
 }
 
 .focus {
-  /* border-bottom: black 5px solid; */
   background-color: rgb(4,10,43);
   color: white;
 }
