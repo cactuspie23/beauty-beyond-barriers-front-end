@@ -1,5 +1,5 @@
 .container {
-  margin: 2vw;
+  /* margin: 2vw; */
   text-align: left;
   width: 25vw;
   height: 600px;
@@ -57,11 +57,11 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   .container {
-    width: 100vw;
+    width: 100%;
     height: auto;
     align-items: flex-start;
     margin-bottom: 5%;
-    padding: 3%;
+    /* padding: 3%; */
   }
 
   #stars {
