@@ -1,39 +1,39 @@
-.container{
+.container {
   padding: 5%;
 }
 
-.dropdown{
+.dropdown {
   width: 100%;
   border-bottom: solid 1px;
   padding-bottom: 1rem;
 }
 
-.container h2{
+.container h2 {
   font-weight: 400;
 }
 
-.dropdown_title{
+.dropdown_title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
 
-.dropdown_title > h2 {
+.dropdown_title>h2 {
   font-family: 'Optima';
   font-size: 1.8rem;
 }
 
-.dropdown_title > div {
+.dropdown_title>div {
   font-size: 2.5rem;
   font-weight: 200;
 }
 
-.use > a > img{
+.use>a>img {
   max-width: 25vw;
 }
 
-.container ul{
+.container ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -58,41 +58,41 @@
   flex-direction: column;
 }
 
-.container select{
-  width:80%;
+.container select {
+  width: 80%;
   height: 3em;
 }
 
-#product_info > *{
+#product_info>* {
   margin: 5% 0;
 }
 
-#product_info > h1 {
+#product_info>h1 {
   font-family: 'Optima';
 }
 
-#product_descr
-,#product_descr img{
+#product_descr,
+#product_descr img {
   width: 50vw;
 }
 
-#colors img{
+#colors img {
   width: 28vw;
 }
 
-#product_info{
+#product_info {
   width: 28vw;
   margin: 0 3%;
 }
 
-#section1{
+#section1 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin: 0 3%;
 }
 
-#others{
+#others {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,14 +108,14 @@
   margin: 2em 0;
 }
 
-#subscribe{
+#subscribe {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 5%;
 }
 
-#qty_sec{
+#qty_sec {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -123,7 +123,7 @@
   margin-top: 5%;
 }
 
-#qty{
+#qty {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,14 +132,14 @@
   height: 2em;
 }
 
-#qty button{
+#qty button {
   width: 20%;
   background-color: white;
-  border:1px black solid;
+  border: 1px black solid;
   height: 100%;
 }
 
-#qty div{
+#qty div {
   height: 100%;
   width: 40%;
   border-top: 1px solid black;
@@ -149,7 +149,7 @@
   align-items: center;
 }
 
-#add{
+#add {
   background-color: #040A2B;
   color: white;
   display: flex;
@@ -171,7 +171,7 @@
     width: 100%;
   }
 
-  #product_info{
+  #product_info {
     width: 85%;
     margin: 0;
   }
@@ -179,25 +179,30 @@
   #product_descr {
     width: 100%;
   }
-  
-  #product_descr img{
+
+  #product_descr img {
     width: 100%;
   }
-  
+
   #stars {
     display: flex;
     max-width: max-content;
     height: auto;
   }
+
   #icons {
     width: 100%;
     margin: 0;
     border: 1px solid;
   }
 
-  #others{
+  #others {
     flex-direction: column;
     gap: 5%;
     margin: 2.8rem 0;
+  }
+
+  #afterpay img{
+    width: 100px;
   }
 }
