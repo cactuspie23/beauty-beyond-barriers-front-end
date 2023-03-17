@@ -18,8 +18,8 @@ button {
   font-weight: 400;
 }
 
-.container {
-  max-width: 100vw;
+.kit_container {
+  max-width: 100%;
   padding: 0 5vw;
 }
 
@@ -181,6 +181,10 @@ ol#kits li:hover{
 }
 
 @media screen and (max-width: 740px) {
+  .products > div > button {
+    margin: 1.5rem auto;
+  }
+
   #title_section {
     flex-direction: column;
   }
