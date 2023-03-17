@@ -34,7 +34,6 @@ const ProductDetails = ({ products, windowWidth }) => {
           {windowWidth >= 768 ?
           ''
           :
-
           <div id={styles.product_info}>
             <h1>{product.name}</h1>
             <div id={styles.stars}>
@@ -130,24 +129,6 @@ const ProductDetails = ({ products, windowWidth }) => {
               <div>
                 {product.description}
               </div>
-              {/* <div>
-                <b>Accessibility Features</b><br />
-                Grip friendly: Lorem ipsum dolor sit amet consectetur.<br />
-                Highly-pigmented: Lorem ipsum dolor sit amet consectetur.<br />
-                Easy Applicator: Lorem ipsum dolor sit amet consectetur.<br /><br />
-
-                Learn more about our accessibility products here.<br />
-              </div>
-              <br />
-              <div>
-                <b>Matte Finish</b><br />
-                Lorem ipsum dolor sit amet consectetur. Aliquam morbi nulla sed et aliquet. Congue elit fringilla diam pulvinar ut sed.
-              </div>
-              <br />
-              <div>
-                <b>Packaging Details</b><br />
-                Lorem ipsum dolor sit amet consectetur. Aliquam morbi nulla sed et aliquet. Congue elit fringilla diam pulvinar ut sed.
-              </div> */}
             </div>
             <div className={styles.dropdown}>
               <div className={styles.dropdown_title} onClick={() => setShowMore(!showMore)}>
