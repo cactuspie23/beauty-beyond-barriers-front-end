@@ -58,7 +58,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* gap: 5%; */
 }
 
 #sort_by1
@@ -106,7 +105,6 @@
   flex-direction: column;
   padding: 0px;
   gap: 10px;
-
   width: 265px;
   height: 49px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
