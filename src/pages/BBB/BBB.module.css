@@ -58,6 +58,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 5%;
 }
 
 #sort_by1

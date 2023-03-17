@@ -2,7 +2,9 @@
   /* margin: 2vw; */
   text-align: left;
   width: 25vw;
-  height: 600px;
+  min-height: auto;
+  /* height: 600px; */
+  height: 90vh;
   font-family: 'Optima';
   display: flex;
   justify-content: flex-start;
