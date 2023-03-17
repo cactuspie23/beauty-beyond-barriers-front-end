@@ -193,7 +193,7 @@
   }
   
   #info_section {
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 5%;
@@ -204,7 +204,7 @@
   }
   
   #people_img {
-    max-width: 100vw;
+    max-width: 111%;
   }
   
   #title_section {
