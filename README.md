@@ -6,6 +6,9 @@ Beauty Beyond Barriers was created during a hackathon project for Estee Lauder A
 
 ### Launch the site [**here**](https://beautybeyondbarriers.netlify.app) and back-end repo [**here**](https://github.com/cactuspie23/beauty-beyond-barriers-back-end)
 
+## Watch our presentation video here:
+[![Watch the video](https://img.youtube.com/vi/rrC29hobkaA/maxresdefault.jpg)](https://youtu.be/rrC29hobkaA)
+
 ## Landing Page
 
 ![BBB Landing Page](/public/images/ScreenshotLanding.png "The Landing Page")
